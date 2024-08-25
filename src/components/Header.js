@@ -77,8 +77,8 @@ export default function Header() {
               <span className='sr-only'>Your Company</span>
               <img
                 alt=''
-                src={process.env.PUBLIC_URL + '/images/nixorlogo.jpeg'}
-                // className=' w-[50px]'
+                src={process.env.PUBLIC_URL + '/nixorlogo.jpeg'}
+                className=' w-[50px]'
               />
             </a>
             <button
