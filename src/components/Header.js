@@ -10,7 +10,7 @@ export default function Header() {
   const navigate = useNavigate();
 
   return (
-    <header className='bg-white'>
+    <header className='bg-[#f7f7f7]'>
       <nav
         aria-label='Global'
         className='mx-auto flex max-w-9xl items-center justify-between p-7 lg:px-8'
@@ -19,7 +19,7 @@ export default function Header() {
           <a href='#' className='-m-1.5 p-1.5'>
             <img
               alt=''
-              src={process.env.PUBLIC_URL + '/logo.png'}
+              src={process.env.PUBLIC_URL + '/nixorlogo.jpeg'}
               className=' w-[79px]'
             />
           </a>
@@ -43,11 +43,11 @@ export default function Header() {
             Home
           </a>
           <a
-            to='/services'
-            onClick={() => navigate('/services')}
+            to='/courses'
+            onClick={() => navigate('/courses')}
             className='font-poppins text-[16px] cursor-pointer font-medium leading-6 text-gray-900 flex items-center'
           >
-            Services
+            Courses
           </a>
           <a
             to='/about'
@@ -77,8 +77,8 @@ export default function Header() {
               <span className='sr-only'>Your Company</span>
               <img
                 alt=''
-                src={process.env.PUBLIC_URL + '/images/mainlogo.png'}
-                className=' w-[50px]'
+                src={process.env.PUBLIC_URL + '/images/nixorlogo.jpeg'}
+                // className=' w-[50px]'
               />
             </a>
             <button

@@ -38,7 +38,7 @@ function Home() {
         <div className='absolute inset-0 bg-black opacity-50'></div>
         <div className='mt-[500px] absolute font-poppins  w-full flex justify-center'>
           <a className='bg-[#ff0000] w-[300px] text-white text-[18px] text-center p-4 rounded-md font-semibold cursor-pointer'>
-            Transform Your Career with Aptech{' '}
+            Transform Your Career with Nixor Tech
           </a>
         </div>
       </div>
@@ -57,17 +57,15 @@ function Home() {
           <div className='w-[100%] md:w-[45%] md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
             <div className='w-[80px] h-[60px]'>
               <img
-                src={process.env.PUBLIC_URL + '/logo.png'}
+                 src={process.env.PUBLIC_URL + '/nixorlogo.jpeg'}
                 className='object-cover w-full h-full rounded-md'
               />
             </div>
             <div className='flex flex-col gap-4'>
-              <h3 className='font-poppins font-bold text-[18px]'>ADSE</h3>
+              <h3 className='font-poppins font-bold text-[18px]'>Computer CIT</h3>
               <p className='font-poppins text-[14.4px]'>
-                ACCP-AI offers a comprehensive career path covering website,
-                web, and mobile app development. It includes data science tools
-                and real-world AI/ML projects, preparing individuals with
-                essential skills for the future job market.
+              Learn the essentials of computer literacy, including basic hardware and software operations. This course covers fundamental skills such as operating systems, word processing, spreadsheets, and internet browsing. Ideal for beginners aiming to become proficient in everyday computer use. Provides foundational knowledge for further technical education. Perfect for students, professionals, and anyone looking to improve computer proficiency.
+
               </p>
             </div>
             <div className='bg-yellow-500 w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
@@ -82,17 +80,14 @@ function Home() {
           <div className='w-[100%] md:w-[45%] md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
             <div className='w-[80px] h-[60px]'>
               <img
-                src={process.env.PUBLIC_URL + '/logo.png'}
+                src={process.env.PUBLIC_URL + '/nixorlogo.jpeg'}
                 className='object-cover w-full h-full rounded-md'
               />
             </div>
             <div className='flex flex-col gap-4'>
-              <h3 className='font-poppins font-bold text-[18px]'>ADSE</h3>
+              <h3 className='font-poppins font-bold text-[18px]'>Amazon Virtual Assistant</h3>
               <p className='font-poppins text-[14.4px]'>
-                ACCP-AI offers a comprehensive career path covering website,
-                web, and mobile app development. It includes data science tools
-                and real-world AI/ML projects, preparing individuals with
-                essential skills for the future job market.
+              Become skilled in assisting Amazon sellers with their online businesses. Learn product research, listing optimization, order processing, customer service, and inventory management. The course teaches best practices for managing Amazon Seller Central accounts. Equip yourself with valuable skills to work remotely as a virtual assistant. Suitable for individuals interested in e-commerce and online freelancing.
               </p>
             </div>
             <div className='bg-yellow-500 w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
@@ -119,12 +114,10 @@ function Home() {
           </div>
           <div className='w-[100%] md:w-[45%] md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
             <div className='flex flex-col gap-4'>
-              <h3 className='font-poppins font-bold text-[14.4px]'>ADSE</h3>
+              <h3 className='font-poppins font-bold text-[14.4px]'>Office Automation</h3>
               <p className='font-poppins text-[14.4px]'>
-                ACCP-AI offers a comprehensive career path covering website,
-                web, and mobile app development. It includes data science tools
-                and real-world AI/ML projects, preparing individuals with
-                essential skills for the future job market.
+              Master the automation tools used in modern offices, including document management, email handling, and scheduling systems. Learn how to automate repetitive office tasks to increase efficiency and productivity. The course includes training on office software like Microsoft Office Suite and Google Workspace. Ideal for administrative professionals and office managers. Gain the skills to streamline daily office operations.
+
               </p>
             </div>
             <div className='bg-yellow-500 w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
@@ -137,21 +130,19 @@ function Home() {
         </div>
 
         <div className='flex flex-col md:flex-row justify-between'>
-          <div className=' md:w-[49%] flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
-            <div className='w-[100%] md:w-[55%] h-[200px]'>
+          <div className=' md:w-[49%] flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
+            <div className='w-[100%]  '>
               <img
-                src={process.env.PUBLIC_URL + '/homestc.png'}
+                src={process.env.PUBLIC_URL + '/webdevbanner.png'}
                 className='object-contain w-full h-full rounded-md'
               />
             </div>
-            <div className='w-[100%] md:w-[45%] md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
+            <div className='w-[100%]  md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
               <div className='flex flex-col gap-4'>
-                <h3 className='font-poppins font-bold text-[14.4px]'>ADSE</h3>
+                <h3 className='font-poppins font-bold text-[14.4px]'>Advanced Web Development</h3>
                 <p className='font-poppins text-[14.4px]'>
-                  ACCP-AI offers a comprehensive career path covering website,
-                  web, and mobile app development. It includes data science
-                  tools and real-world AI/ML projects, preparing individuals
-                  with essential skills for the future job market.
+                Dive deep into modern web technologies and frameworks like React, Angular, and Node.js. Build dynamic, responsive, and scalable websites and web applications. The course covers both front-end and back-end development techniques. Explore topics like RESTful APIs, databases, and server management. Ideal for aspiring web developers looking to enhance their skills.
+
                 </p>
               </div>
               <div className='bg-yellow-500 w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
@@ -162,21 +153,19 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className=' md:w-[49%]  flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
-            <div className='w-[100%] md:w-[55%] h-[200px]'>
+          <div className=' md:w-[49%]  flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
+            <div className='w-[100%]'>
               <img
                 src={process.env.PUBLIC_URL + '/homestc.png'}
                 className='object-contain w-full h-full rounded-md'
               />
             </div>
-            <div className='w-[100%] md:w-[45%] md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
+            <div className='w-[100%]  md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
               <div className='flex flex-col gap-4'>
-                <h3 className='font-poppins font-bold text-[14.4px]'>ADSE</h3>
+                <h3 className='font-poppins font-bold text-[14.4px]'>Mobile Application Development</h3>
                 <p className='font-poppins text-[14.4px]'>
-                  ACCP-AI offers a comprehensive career path covering website,
-                  web, and mobile app development. It includes data science
-                  tools and real-world AI/ML projects, preparing individuals
-                  with essential skills for the future job market.
+                Learn how to develop applications for mobile devices using platforms like Android and iOS. This course covers app architecture, user interface design, and coding in languages such as Java, Swift, and Kotlin. Understand mobile app deployment and maintenance. Suitable for anyone aiming to create user-friendly mobile applications. Gain hands-on experience by building functional apps.
+
                 </p>
               </div>
               <div className='bg-yellow-500 w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>

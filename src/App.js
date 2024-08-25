@@ -7,7 +7,7 @@ import {
 import Home from './pages/Home';
 import About from './pages/About';
 import { Contact } from './pages/Contact';
-import { Services } from './pages/Services';
+import { Courses } from './pages/Courses';
 
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
       element: <Contact />,
     },
     {
-      path: '/services',
-      element: <Services />,
+      path: '/courses',
+      element: <Courses />,
     },
   ]);
   return <RouterProvider router={router} />;

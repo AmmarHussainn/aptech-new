@@ -2,11 +2,11 @@ import React from 'react';
 
 export const Footer = () => {
   return (
-    <div className='bg-white p-9'>
+    <div className='bg-[#f7f7f7] p-9'>
       <div className='flex md:flex-row flex-col gap-5 md:gap-0'>
         <div className='w-full md:w-[20%] flex flex-col'>
           <img
-            src={process.env.PUBLIC_URL + '/logo.png'}
+            src={process.env.PUBLIC_URL + '/nixorlogo.jpeg'}
             alt=''
             className='w-[122px]'
           />
