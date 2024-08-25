@@ -68,7 +68,7 @@ function Home() {
 
               </p>
             </div>
-            <div className='bg-yellow-500 w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
+            <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
               <img
                 src={process.env.PUBLIC_URL + '/arrow_r.png'}
                 width={'24px'}
@@ -90,7 +90,7 @@ function Home() {
               Become skilled in assisting Amazon sellers with their online businesses. Learn product research, listing optimization, order processing, customer service, and inventory management. The course teaches best practices for managing Amazon Seller Central accounts. Equip yourself with valuable skills to work remotely as a virtual assistant. Suitable for individuals interested in e-commerce and online freelancing.
               </p>
             </div>
-            <div className='bg-yellow-500 w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
+            <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
               <img
                 src={process.env.PUBLIC_URL + '/arrow_r.png'}
                 width={'24px'}
@@ -120,7 +120,7 @@ function Home() {
 
               </p>
             </div>
-            <div className='bg-yellow-500 w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
+            <div className='bg-[#1f89c9] w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
               <img
                 src={process.env.PUBLIC_URL + '/arrow_r.png'}
                 width={'24px'}
@@ -145,7 +145,7 @@ function Home() {
 
                 </p>
               </div>
-              <div className='bg-yellow-500 w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
+              <div className='bg-[#1f89c9] w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
                 <img
                   src={process.env.PUBLIC_URL + '/arrow_r.png'}
                   width={'24px'}
@@ -168,7 +168,7 @@ function Home() {
 
                 </p>
               </div>
-              <div className='bg-yellow-500 w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
+              <div className='bg-[#1f89c9] w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
                 <img
                   src={process.env.PUBLIC_URL + '/arrow_r.png'}
                   width={'24px'}
@@ -269,7 +269,7 @@ function Home() {
         <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white p-4 mt-9 '>
           <div className='w-[100%] md:w-[55%] h-[400px] md:p-5  flex flex-col gap-4 md:gap-0 justify-evenly '>
             <div className='flex flex-col gap-4'>
-              <p className='font-poppins text-[16px] text-[#ffbe11] font-semibold'>
+              <p className='font-poppins text-[16px] text-[#1f89c9] font-semibold'>
                 Job Placements
               </p>
               <h3 className='font-poppins font-bold text-[22px] md:text-[30px]'>
@@ -316,10 +316,10 @@ function Home() {
 
       <div className='bg-[#fbfafa] p-5 flex flex-col md:flex-row pt-[100px] pb-[100px] gap-9 md:gap-0'>
         <div className='w-[100%] md:w-[40%] flex flex-col justify-center'>
-          <p className='font-poppins text-[16px] text-[#ffbe11] font-semibold'>
+          <p className='font-poppins text-[16px] text-[#1f89c9] font-semibold'>
             Testimonials
           </p>
-          <h3 className='font-poppins font-bold text-[22px] text-[#ffbe11] md:text-[30px]'>
+          <h3 className='font-poppins font-bold text-[22px] text-[#1f89c9] md:text-[30px]'>
             Aptech creates values across the world.
           </h3>
         </div>
@@ -342,7 +342,7 @@ function Home() {
                   influence continues to inspire my work at The Tech Creators.
                 </p>
                 <div>
-                <h3 className='font-poppins text-[13px] font-bold text-[#ffbe11]'>Ammar Akhter</h3>
+                <h3 className='font-poppins text-[13px] font-bold text-[#1f89c9]'>Ammar Akhter</h3>
                 <h4 className='font-poppins text-[13px]' >CEO Final Rentals</h4>
                 </div>
 
@@ -363,7 +363,7 @@ function Home() {
                   influence continues to inspire my work at The Tech Creators.
                 </p>
                 <div>
-                <h3 className='font-poppins text-[13px] font-bold text-[#ffbe11]'>Sidra Batool</h3>
+                <h3 className='font-poppins text-[13px] font-bold text-[#1f89c9]'>Sidra Batool</h3>
                 <h4 className='font-poppins text-[13px]' >CEO Final Rentals</h4>
                 </div>
 

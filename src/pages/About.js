@@ -97,6 +97,7 @@ function About() {
           </div>{' '}
           <div className='w-[100%] h-[500px] md:w-[50%] flex justify-center items-center'>
             <img
+            alt=''
               src={process.env.PUBLIC_URL + '/siriqbal.jpg'}
               className='w-full h-full object-contain'
             />
@@ -141,6 +142,7 @@ function About() {
             <div className='inline text-[#008000]'>36</div>
             centers across
             <img
+             alt=''
               src={process.env.PUBLIC_URL + '/pakistan.png'}
               className='w-[30px] object-contain inline'
             />
@@ -175,6 +177,7 @@ function About() {
             </div>{' '}
             <div className='w-[100%] md:w-[50%] h-[400px] flex justify-end'>
               <img
+               alt=''
                 src={process.env.PUBLIC_URL + '/award.jpg'}
                 className='object-contain w-full h-full rounded-md'
               />
@@ -183,6 +186,7 @@ function About() {
           <div className='flex flex-col md:flex-row shadow-sm hover:shadow-lg w-[100%] md:w-[70%] gap-5 md:gap-0 bg-white  mt-9 '>
             <div className='w-[100%] md:w-[50%] h-[400px] flex justify-end'>
               <img
+               alt=''
                 src={process.env.PUBLIC_URL + '/aboutimg.jpg'}
                 className='object-contain w-full h-full rounded-md'
               />

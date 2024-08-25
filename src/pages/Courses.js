@@ -14,6 +14,7 @@ export const Courses = () => {
         <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
           <div className='w-[100%] md:w-[55%]'>
             <img
+             alt=''
               src={process.env.PUBLIC_URL + '/temp.jpg'}
               className='object-cover w-full h-full rounded-md'
             />
@@ -21,6 +22,7 @@ export const Courses = () => {
           <div className='w-[100%] md:w-[45%] md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
             <div className='w-[80px] h-[60px]'>
               <img
+               alt=''
                  src={process.env.PUBLIC_URL + '/nixorlogo.jpeg'}
                 className='object-cover w-full h-full rounded-md'
               />
@@ -32,8 +34,9 @@ export const Courses = () => {
 
               </p>
             </div>
-            <div className='bg-yellow-500 w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
+            <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
               <img
+               alt=''
                 src={process.env.PUBLIC_URL + '/arrow_r.png'}
                 width={'24px'}
               />
@@ -54,7 +57,7 @@ export const Courses = () => {
               Become skilled in assisting Amazon sellers with their online businesses. Learn product research, listing optimization, order processing, customer service, and inventory management. The course teaches best practices for managing Amazon Seller Central accounts. Equip yourself with valuable skills to work remotely as a virtual assistant. Suitable for individuals interested in e-commerce and online freelancing.
               </p>
             </div>
-            <div className='bg-yellow-500 w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
+            <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
               <img
                 src={process.env.PUBLIC_URL + '/arrow_r.png'}
                 width={'24px'}
@@ -84,7 +87,7 @@ export const Courses = () => {
 
               </p>
             </div>
-            <div className='bg-yellow-500 w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
+            <div className='bg-[#1f89c9] w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
               <img
                 src={process.env.PUBLIC_URL + '/arrow_r.png'}
                 width={'24px'}
@@ -109,7 +112,7 @@ export const Courses = () => {
 
                 </p>
               </div>
-              <div className='bg-yellow-500 w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
+              <div className='bg-[#1f89c9] w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
                 <img
                   src={process.env.PUBLIC_URL + '/arrow_r.png'}
                   width={'24px'}
@@ -132,7 +135,7 @@ export const Courses = () => {
 
                 </p>
               </div>
-              <div className='bg-yellow-500 w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
+              <div className='bg-[#1f89c9] w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
                 <img
                   src={process.env.PUBLIC_URL + '/arrow_r.png'}
                   width={'24px'}
@@ -167,7 +170,7 @@ export const Courses = () => {
 
               </p>
             </div>
-            <div className='bg-yellow-500 w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
+            <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
               <img
                 src={process.env.PUBLIC_URL + '/arrow_r.png'}
                 width={'24px'}
@@ -188,7 +191,7 @@ export const Courses = () => {
               <p className='font-poppins text-[14.4px]'>
               Develop coding skills in various programming languages such as Python, Java, and C++. Learn how to write clean, efficient, and error-free code. The course covers essential algorithms, data structures, and software development methodologies. Gain practical experience by working on real-world projects. Ideal for beginners or those looking to strengthen their programming foundations.   </p>
             </div>
-            <div className='bg-yellow-500 w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
+            <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
               <img
                 src={process.env.PUBLIC_URL + '/arrow_r.png'}
                 width={'24px'}
@@ -223,7 +226,7 @@ export const Courses = () => {
               Learn the principles of visual design and develop your creativity with tools like Adobe Photoshop, Illustrator, and InDesign. Create stunning visuals for branding, marketing, and digital media. The course includes color theory, typography, and composition techniques. Ideal for aspiring graphic designers or those looking to improve their design skills. Hands-on projects will help build a strong portfolio.
               </p>
             </div>
-            <div className='bg-yellow-500 w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
+            <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
               <img
                 src={process.env.PUBLIC_URL + '/arrow_r.png'}
                 width={'24px'}
@@ -246,7 +249,7 @@ export const Courses = () => {
 
                 </p>
             </div>
-            <div className='bg-yellow-500 w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
+            <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
               <img
                 src={process.env.PUBLIC_URL + '/arrow_r.png'}
                 width={'24px'}
@@ -281,7 +284,7 @@ export const Courses = () => {
               Learn the ins and outs of setting up and managing an online business. This course covers topics like website development, digital marketing, payment gateways, and inventory management. Gain knowledge about customer behavior, sales strategies, and online advertising. Ideal for entrepreneurs looking to start or scale their e-commerce ventures. Stay ahead in the growing digital marketplace.
                </p>
             </div>
-            <div className='bg-yellow-500 w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
+            <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
               <img
                 src={process.env.PUBLIC_URL + '/arrow_r.png'}
                 width={'24px'}
@@ -303,7 +306,7 @@ export const Courses = () => {
               Master the skills needed to manage projects efficiently from start to finish. Learn about project planning, risk management, budgeting, and team leadership. The course covers popular project management methodologies such as Agile and Waterfall. Ideal for professionals aiming to lead successful projects across various industries. Gain the knowledge to ensure project success and timely delivery.
                 </p>
             </div>
-            <div className='bg-yellow-500 w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
+            <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
               <img
                 src={process.env.PUBLIC_URL + '/arrow_r.png'}
                 width={'24px'}
