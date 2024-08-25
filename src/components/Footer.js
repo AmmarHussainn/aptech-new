@@ -21,6 +21,7 @@ export const Footer = () => {
               alt=''
               className='w-[100px]'
             />
+            
             <img
               src={process.env.PUBLIC_URL + '/techwiz.png'}
               alt=''
