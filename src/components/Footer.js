@@ -66,7 +66,7 @@ export const Footer = () => {
       <div className='flex md:flex-row flex-col gap-5 md:gap-0'>
         <div className='w-full md:w-[50%] flex flex-col justify-center'>
           <p className='font-poppins text-[12.4px] pt-[28px] font-semibold'>
-            Copyright © 2023 Aptech Learning Pakistan. All rights reserved.
+            Copyright © 2024 Nixor Tech. All rights reserved.
           </p>
         </div>
         <div className='w-full md:w-[50%]'>
