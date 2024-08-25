@@ -101,11 +101,11 @@ export default function Header() {
                   Home
                 </a>
                 <a
-                  to='/services'
-                  onClick={() => navigate('/services')}
+                  to='/courses'
+                  onClick={() => navigate('/courses')}
                   className='font-poppins text-[16px] cursor-pointer py-3 font-medium leading-6 text-gray-900 flex items-center'
                 >
-                  Services
+                  Courses
                 </a>
                 <a
                   to='/about'
