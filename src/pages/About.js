@@ -77,23 +77,13 @@ function About() {
             </h1>
 
             <p className='font-poppins text-[16px] md:text-[18px]'>
-              Our mission is to empower PAKISTAN through technology. I.T. when
-              rightly employed leads to productivity improvements and prosperity
-              at individual, organizational, societal, National and Global
-              level.
+            Our mission is to advance the technological landscape of Pakistan by nurturing talent and fostering innovation. We believe that technology, when effectively harnessed, drives growth, enhances productivity, and creates a lasting impact on individuals, organizations, and society at large.
+
             </p>
             <p className='font-poppins text-[16px] md:text-[18px]'>
-              APTECH has embarked on a business excellence initiative and is
-              investing in developing competencies to deliver superior quality
-              with total customer orientation. APTECH has embarked on a business
-              excellence initiative and is investing in developing competencies
-              to deliver superior quality with total customer orientation.
+            Nixortech Solutions is dedicated to excellence in education, striving to deliver top-quality training that is customer-centric and industry-relevant. Our commitment to excellence ensures that our students are not just skilled professionals but also future leaders in the global technology space.
             </p>
-            <p className='font-poppins text-[16px] md:text-[18px]'>
-              APTECH has embarked on a business excellence initiative and is
-              investing in developing competencies to deliver superior quality
-              with total customer orientation.
-            </p>
+           
           </div>{' '}
           <div className='w-[100%] h-[500px] md:w-[50%] flex justify-center items-center'>
             <img
@@ -154,10 +144,7 @@ function About() {
               🏆 Acheivement
             </h1>
             <p className='text-[16px] font-poppins'>
-              Aptech brings to the table a wealth of over 25 years of experience
-              in training. Solving business challenges in a competitive market
-              is Aptech’s area of specialization. Aptech’s rapid growth has led
-              the company to mark several milestones worldwide.
+            With a rapidly growing footprint, Nixortech Solutions has emerged as a trusted name in tech education. Our commitment to quality has been recognized by industry experts, and we take pride in our contributions to the tech ecosystem
             </p>
           </div>
 
