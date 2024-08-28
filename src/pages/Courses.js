@@ -12,10 +12,10 @@ export const Courses = () => {
           Courses We Offer
         </h2>
         <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
-          <div className='w-[100%] md:w-[55%]'>
+          <div className='w-[100%] md:h-[400px] md:w-[55%]'>
             <img
              alt=''
-              src={process.env.PUBLIC_URL + '/temp.jpg'}
+              src={process.env.PUBLIC_URL + '/nixorimg1.jpeg'}
               className='object-cover w-full h-full rounded-md'
             />
           </div>
@@ -64,9 +64,9 @@ export const Courses = () => {
               />
             </div>
           </div>{' '}
-          <div className='w-[100%] md:w-[55%]'>
+          <div className='w-[100%] md:h-[400px] md:w-[55%]'>
             <img
-              src={process.env.PUBLIC_URL + '/temp.jpg'}
+              src={process.env.PUBLIC_URL + '/nixorimg2.jpeg'}
               className='object-cover w-full h-full rounded-md'
             />
           </div>
@@ -149,9 +149,9 @@ export const Courses = () => {
 
 
         <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
-          <div className='w-[100%] md:w-[55%]'>
+          <div className='w-[100%] md:h-[400px] md:w-[55%]'>
             <img
-              src={process.env.PUBLIC_URL + '/temp.jpg'}
+              src={process.env.PUBLIC_URL + '/nixorimg3.jpeg'}
               className='object-cover w-full h-full rounded-md'
             />
           </div>
@@ -198,18 +198,18 @@ export const Courses = () => {
               />
             </div>
           </div>{' '}
-          <div className='w-[100%] md:w-[55%]'>
+          <div className='w-[100%] md:h-[400px] md:w-[55%]'>
             <img
-              src={process.env.PUBLIC_URL + '/temp.jpg'}
+              src={process.env.PUBLIC_URL + '/nixorimg4.jpeg'}
               className='object-cover w-full h-full rounded-md'
             />
           </div>
         </div>
 
         <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
-          <div className='w-[100%] md:w-[55%]'>
+          <div className='w-[100%] md:h-[400px] md:w-[55%]'>
             <img
-              src={process.env.PUBLIC_URL + '/temp.jpg'}
+              src={process.env.PUBLIC_URL + '/nixorimg1.jpeg'}
               className='object-cover w-full h-full rounded-md'
             />
           </div>
@@ -256,18 +256,18 @@ export const Courses = () => {
               />
             </div>
           </div>{' '}
-          <div className='w-[100%] md:w-[55%]'>
+          <div className='w-[100%] md:h-[400px] md:w-[55%]'>
             <img
-              src={process.env.PUBLIC_URL + '/temp.jpg'}
+              src={process.env.PUBLIC_URL + '/nixorimg2.jpeg'}
               className='object-cover w-full h-full rounded-md'
             />
           </div>
         </div>
         
         <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
-          <div className='w-[100%] md:w-[55%]'>
+          <div className='w-[100%] md:h-[400px] md:w-[55%]'>
             <img
-              src={process.env.PUBLIC_URL + '/temp.jpg'}
+              src={process.env.PUBLIC_URL + '/nixorimg3.jpeg'}
               className='object-cover w-full h-full rounded-md'
             />
           </div>
@@ -313,9 +313,9 @@ export const Courses = () => {
               />
             </div>
           </div>{' '}
-          <div className='w-[100%] md:w-[55%]'>
+          <div className='w-[100%] md:h-[400px] md:w-[55%]'>
             <img
-              src={process.env.PUBLIC_URL + '/temp.jpg'}
+              src={process.env.PUBLIC_URL + '/nixorimg4.jpeg'}
               className='object-cover w-full h-full rounded-md'
             />
           </div>

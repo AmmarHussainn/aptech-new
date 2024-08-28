@@ -19,8 +19,8 @@ function Home() {
   };
 
   useEffect(() => {
-      showNextDiv();
-     },[])
+    showNextDiv();
+  }, []);
   return (
     <div className='selection:bg-yellow-500'>
       <Header />
@@ -48,24 +48,32 @@ function Home() {
           Get started right away
         </h2>
         <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
-          <div className='w-[100%] md:w-[55%]'>
+          <div className='w-[100%] md:w-[55%] md:h-[400px]'>
             <img
-              src={process.env.PUBLIC_URL + '/temp.jpg'}
+              src={process.env.PUBLIC_URL + '/nixorimg1.jpeg'}
               className='object-cover w-full h-full rounded-md'
             />
           </div>
           <div className='w-[100%] md:w-[45%] md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
             <div className='w-[80px] h-[60px]'>
               <img
-                 src={process.env.PUBLIC_URL + '/nixorlogo.jpeg'}
+                src={process.env.PUBLIC_URL + '/nixorlogo.jpeg'}
                 className='object-cover w-full h-full rounded-md'
               />
             </div>
             <div className='flex flex-col gap-4'>
-              <h3 className='font-poppins font-bold text-[18px]'>Computer CIT</h3>
+              <h3 className='font-poppins font-bold text-[18px]'>
+                Computer CIT
+              </h3>
               <p className='font-poppins text-[14.4px]'>
-              Learn the essentials of computer literacy, including basic hardware and software operations. This course covers fundamental skills such as operating systems, word processing, spreadsheets, and internet browsing. Ideal for beginners aiming to become proficient in everyday computer use. Provides foundational knowledge for further technical education. Perfect for students, professionals, and anyone looking to improve computer proficiency.
-
+                Learn the essentials of computer literacy, including basic
+                hardware and software operations. This course covers fundamental
+                skills such as operating systems, word processing, spreadsheets,
+                and internet browsing. Ideal for beginners aiming to become
+                proficient in everyday computer use. Provides foundational
+                knowledge for further technical education. Perfect for students,
+                professionals, and anyone looking to improve computer
+                proficiency.
               </p>
             </div>
             <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
@@ -85,9 +93,17 @@ function Home() {
               />
             </div>
             <div className='flex flex-col gap-4'>
-              <h3 className='font-poppins font-bold text-[18px]'>Amazon Virtual Assistant</h3>
+              <h3 className='font-poppins font-bold text-[18px]'>
+                Amazon Virtual Assistant
+              </h3>
               <p className='font-poppins text-[14.4px]'>
-              Become skilled in assisting Amazon sellers with their online businesses. Learn product research, listing optimization, order processing, customer service, and inventory management. The course teaches best practices for managing Amazon Seller Central accounts. Equip yourself with valuable skills to work remotely as a virtual assistant. Suitable for individuals interested in e-commerce and online freelancing.
+                Become skilled in assisting Amazon sellers with their online
+                businesses. Learn product research, listing optimization, order
+                processing, customer service, and inventory management. The
+                course teaches best practices for managing Amazon Seller Central
+                accounts. Equip yourself with valuable skills to work remotely
+                as a virtual assistant. Suitable for individuals interested in
+                e-commerce and online freelancing.
               </p>
             </div>
             <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
@@ -97,10 +113,10 @@ function Home() {
               />
             </div>
           </div>{' '}
-          <div className='w-[100%] md:w-[55%]'>
+          <div className='w-[100%] md:h-[400px] md:w-[55%]'>
             <img
-              src={process.env.PUBLIC_URL + '/temp.jpg'}
-              className='object-cover w-full h-full rounded-md'
+              src={process.env.PUBLIC_URL + '/nixorimg2.jpeg'}
+              className='object-cover w-full h-full  rounded-md'
             />
           </div>
         </div>
@@ -114,10 +130,17 @@ function Home() {
           </div>
           <div className='w-[100%] md:w-[45%] md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
             <div className='flex flex-col gap-4'>
-              <h3 className='font-poppins font-bold text-[14.4px]'>Office Automation</h3>
+              <h3 className='font-poppins font-bold text-[14.4px]'>
+                Office Automation
+              </h3>
               <p className='font-poppins text-[14.4px]'>
-              Master the automation tools used in modern offices, including document management, email handling, and scheduling systems. Learn how to automate repetitive office tasks to increase efficiency and productivity. The course includes training on office software like Microsoft Office Suite and Google Workspace. Ideal for administrative professionals and office managers. Gain the skills to streamline daily office operations.
-
+                Master the automation tools used in modern offices, including
+                document management, email handling, and scheduling systems.
+                Learn how to automate repetitive office tasks to increase
+                efficiency and productivity. The course includes training on
+                office software like Microsoft Office Suite and Google
+                Workspace. Ideal for administrative professionals and office
+                managers. Gain the skills to streamline daily office operations.
               </p>
             </div>
             <div className='bg-[#1f89c9] w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
@@ -139,10 +162,16 @@ function Home() {
             </div>
             <div className='w-[100%]  md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
               <div className='flex flex-col gap-4'>
-                <h3 className='font-poppins font-bold text-[14.4px]'>Advanced Web Development</h3>
+                <h3 className='font-poppins font-bold text-[14.4px]'>
+                  Advanced Web Development
+                </h3>
                 <p className='font-poppins text-[14.4px]'>
-                Dive deep into modern web technologies and frameworks like React, Angular, and Node.js. Build dynamic, responsive, and scalable websites and web applications. The course covers both front-end and back-end development techniques. Explore topics like RESTful APIs, databases, and server management. Ideal for aspiring web developers looking to enhance their skills.
-
+                  Dive deep into modern web technologies and frameworks like
+                  React, Angular, and Node.js. Build dynamic, responsive, and
+                  scalable websites and web applications. The course covers both
+                  front-end and back-end development techniques. Explore topics
+                  like RESTful APIs, databases, and server management. Ideal for
+                  aspiring web developers looking to enhance their skills.
                 </p>
               </div>
               <div className='bg-[#1f89c9] w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
@@ -162,10 +191,17 @@ function Home() {
             </div>
             <div className='w-[100%]  md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
               <div className='flex flex-col gap-4'>
-                <h3 className='font-poppins font-bold text-[14.4px]'>Mobile Application Development</h3>
+                <h3 className='font-poppins font-bold text-[14.4px]'>
+                  Mobile Application Development
+                </h3>
                 <p className='font-poppins text-[14.4px]'>
-                Learn how to develop applications for mobile devices using platforms like Android and iOS. This course covers app architecture, user interface design, and coding in languages such as Java, Swift, and Kotlin. Understand mobile app deployment and maintenance. Suitable for anyone aiming to create user-friendly mobile applications. Gain hands-on experience by building functional apps.
-
+                  Learn how to develop applications for mobile devices using
+                  platforms like Android and iOS. This course covers app
+                  architecture, user interface design, and coding in languages
+                  such as Java, Swift, and Kotlin. Understand mobile app
+                  deployment and maintenance. Suitable for anyone aiming to
+                  create user-friendly mobile applications. Gain hands-on
+                  experience by building functional apps.
                 </p>
               </div>
               <div className='bg-[#1f89c9] w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
@@ -320,13 +356,16 @@ function Home() {
             Testimonials
           </p>
           <h3 className='font-poppins font-bold text-[22px] text-[#1f89c9] md:text-[30px]'>
-            Aptech creates values across the world.
+            Nixortech creates values across the world.
           </h3>
         </div>
         <div className='w-[100%] md:w-[60%] flex'>
           <div className='flex justify-end mt-4'>
             <button onClick={showNextDiv}>
-              <img src={process.env.PUBLIC_URL + '/ab_wt.png'} className='md:w-[48px] w-[30px]' />
+              <img
+                src={process.env.PUBLIC_URL + '/ab_wt.png'}
+                className='md:w-[48px] w-[30px]'
+              />
             </button>
           </div>
           <div className='relative w-[calc(100%-60px)] md:w-[calc(100%-96px)] h-[300px]  overflow-hidden'>
@@ -336,19 +375,26 @@ function Home() {
             >
               <div className='w-[60%] md:w-[50%] p-2 md:p-5 flex flex-col justify-between'>
                 <p className='font-poppins  md:text-[16px] text-[12.5px]  '>
-                &quot; Aptech Learning was the catalyst for my career in technology.
-                  The innovative courses and supportive environment fueled my
-                  passion and prepared me to lead in the tech world. Aptech’s
-                  influence continues to inspire my work at The Tech Creators.
+                  &quot; At Nixortech Solutions, we offer a wide array of
+                  courses including Artificial Intelligence, Mobile Application
+                  Development, Web Development, Graphic Designing, Cyber
+                  Security, and more. Our programs are carefully designed to
+                  meet the demands of the ever-evolving tech industry
                 </p>
                 <div>
-                <h3 className='font-poppins text-[13px] font-bold text-[#1f89c9]'>Ammar Akhter</h3>
-                <h4 className='font-poppins text-[13px]' >CEO Final Rentals</h4>
+                  <h3 className='font-poppins text-[13px] font-bold text-[#1f89c9]'>
+                    Ammar Akhter
+                  </h3>
+                  <h4 className='font-poppins text-[13px]'>
+                    CEO Final Rentals
+                  </h4>
                 </div>
-
               </div>
               <div className='w-[40%] md:w-[50%] h-[100%] flex justify-center'>
-                <img src={process.env.PUBLIC_URL + '/AMMAR_AKHTER.png'} className='w-full h-full object-cover' />
+                <img
+                  src={process.env.PUBLIC_URL + '/AMMAR_AKHTER.png'}
+                  className='w-full h-full object-cover'
+                />
               </div>
             </div>
             <div
@@ -357,19 +403,24 @@ function Home() {
             >
               <div className='w-[60%] md:w-[50%] p-2 md:p-5 flex flex-col justify-between'>
                 <p className='font-poppins  md:text-[16px] text-[12.5px] '>
-                &quot; Aptech Learning was the catalyst for my career in technology.
-                  The innovative courses and supportive environment fueled my
-                  passion and prepared me to lead in the tech world. Aptech’s
-                  influence continues to inspire my work at The Tech Creators.
+                  &quot; Nixortech Solutions is a dynamic and forward-thinking
+                  institution dedicated to empowering individuals through
+                  cutting-edge technical education. Our focus is on providing
+                  students with the practical skills and knowledge they need to
+                  excel in the fast-paced world of technology.
                 </p>
                 <div>
-                <h3 className='font-poppins text-[13px] font-bold text-[#1f89c9]'>Sidra Batool</h3>
-                <h4 className='font-poppins text-[13px]' >CEO Final Rentals</h4>
+                  <h3 className='font-poppins text-[13px] font-bold text-[#1f89c9]'>
+                    Quratulain
+                  </h3>
+                  <h4 className='font-poppins text-[13px]'>CEO Nixor Tech</h4>
                 </div>
-
               </div>
               <div className='w-[40%] md:w-[50%] h-[100%] flex justify-center'>
-                <img src={process.env.PUBLIC_URL + '/Sidra_Batool.png'} className='w-full h-full object-cover' />
+                <img
+                  src={process.env.PUBLIC_URL + '/Sidra_Batool.png'}
+                  className='w-full h-full object-cover'
+                />
               </div>
             </div>
             {/* <div
@@ -414,11 +465,13 @@ function Home() {
                 <img src={process.env.PUBLIC_URL + '/Omar_admani.png'} className='h-[100%]' />
               </div>
             </div> */}
-           
           </div>
           <div className='flex justify-between mt-4'>
             <button onClick={showNextDiv}>
-              <img src={process.env.PUBLIC_URL + '/af_wt.png'} className='md:w-[48px] w-[30px]' />
+              <img
+                src={process.env.PUBLIC_URL + '/af_wt.png'}
+                className='md:w-[48px] w-[30px]'
+              />
             </button>
           </div>
         </div>
