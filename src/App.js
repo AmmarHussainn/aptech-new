@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import { Contact } from './pages/Contact';
 import { Courses } from './pages/Courses';
+import Applynow from './pages/Applynow';
 
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
       path: '/courses',
       element: <Courses />,
     },
+    {
+      path: '/applynow',
+      element: <Applynow />,
+    }
   ]);
   return <RouterProvider router={router} />;
 }
