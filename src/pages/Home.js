@@ -115,7 +115,7 @@ function Home() {
           </div>{' '}
           <div className='w-[100%] md:h-[400px] md:w-[55%]'>
             <img
-              src={process.env.PUBLIC_URL + '/nixorimg2.jpeg'}
+              src={process.env.PUBLIC_URL + '/amazonvabanner.jpg'}
               className='object-cover w-full h-full  rounded-md'
             />
           </div>
@@ -217,10 +217,10 @@ function Home() {
 
       {/* 3RD SECTION */}
       <div className='p-5 bg-[#ffffff] flex flex-col items-center'>
-        <h2 className='font-poppins font-bold text-[22px] md:text-[30px]'>
+        {/* <h2 className='font-poppins font-bold text-[22px] md:text-[30px]'>
           Aptech cover every major cities in world.
-        </h2>
-        <div className='w-full flex justify-between flex-col gap-4 md:gap-0 md:flex-row mt-5'>
+        </h2> */}
+        {/* <div className='w-full flex justify-between flex-col gap-4 md:gap-0 md:flex-row mt-5'>
           <div className='w-[100%] md:w-[33.3%] flex flex-col items-center'>
             <h1 className='text-[48px] md:text-[80px] text-[#444444] font-poppins font-bold'>
               04
@@ -245,9 +245,9 @@ function Home() {
               Centers
             </h3>
           </div>
-        </div>
+        </div> */}
 
-        <h2 className='font-poppins font-bold text-[22px] md:text-[30px] flex mt-9'>
+        {/* <h2 className='font-poppins font-bold text-[22px] md:text-[30px] flex mt-9'>
           <div className='inline text-[#008000]'>36</div>
           centers across
           <img
@@ -255,7 +255,7 @@ function Home() {
             className='w-[30px] object-contain inline'
           />
           Pakistan
-        </h2>
+        </h2> */}
 
         <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white p-4 mt-9 '>
           <div className='w-[100%] md:w-[55%] h-[400px] flex justify-end'>
@@ -277,7 +277,7 @@ function Home() {
                 countries.
               </p>
               <p className='font-poppins text-[14.4px] text-[#008000]'>
-                Aptech prepares students to be a part of this growing industry
+                NixorTech prepares students to be a part of this growing industry
                 through its courses and various placement assistance activities.
               </p>
             </div>
@@ -287,7 +287,7 @@ function Home() {
 
       {/* 4TH SECTION */}
 
-      <div className='p-5'>
+      {/* <div className='p-5'>
         <iframe
           width='100%'
           height='500'
@@ -298,7 +298,7 @@ function Home() {
           referrerpolicy='strict-origin-when-cross-origin'
           allowfullscreen
         ></iframe>
-      </div>
+      </div> */}
       {/* 5TH SECTION */}
 
       <div>
@@ -423,48 +423,7 @@ function Home() {
                 />
               </div>
             </div>
-            {/* <div
-              id='div3'
-              className='absolute w-full rounded-2xl bg-[#ffffff] border border-black h-full transition-transform duration-500 transform flex'
-            >
-              <div className='w-[50%] p-5 flex flex-col justify-between'>
-                <p className='font-poppins text-[16px] '>
-                &quot; Aptech Learning was the catalyst for my career in technology.
-                  The innovative courses and supportive environment fueled my
-                  passion and prepared me to lead in the tech world. Aptech’s
-                  influence continues to inspire my work at The Tech Creators.
-                </p>
-                <div>
-                <h3 className='font-poppins text-[13px] font-bold text-[#ffbe11]'>FAROOQ RATHOD</h3>
-                <h4 className='font-poppins text-[13px]' >CEO Final Rentals</h4>
-                </div>
-
-              </div>
-              <div className='w-[50%]'>
-                <img src={process.env.PUBLIC_URL + '/FAROOQ_RATHOD.png'} />
-              </div>
-            </div> */}
-            {/* <div
-              id='div4'
-              className='absolute w-full rounded-2xl bg-[#ffffff] border border-black h-full transition-transform duration-500 transform flex'
-            >
-              <div className='w-[50%] p-5 flex flex-col justify-between'>
-                <p className='font-poppins text-[16px] '>
-                &quot; Aptech Learning was the catalyst for my career in technology.
-                  The innovative courses and supportive environment fueled my
-                  passion and prepared me to lead in the tech world. Aptech’s
-                  influence continues to inspire my work at The Tech Creators.
-                </p>
-                <div>
-                <h3 className='font-poppins text-[13px] font-bold text-[#ffbe11]'>Omar admani</h3>
-                <h4 className='font-poppins text-[13px]' >CEO Final Rentals</h4>
-                </div>
-
-              </div>
-              <div className='w-[50%] flex justify-end rounded-2xl overflow-hidden'>
-                <img src={process.env.PUBLIC_URL + '/Omar_admani.png'} className='h-[100%]' />
-              </div>
-            </div> */}
+           
           </div>
           <div className='flex justify-between mt-4'>
             <button onClick={showNextDiv}>

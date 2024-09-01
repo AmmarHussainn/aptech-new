@@ -48,11 +48,11 @@ const Applynow = () => {
               />
               
               <TextInputField
-                label="Father's Name"
+                label="Father's Name or Husband's Name"
                 name='fatherName'
                 value={formData.fatherName}
                 onChange={handleChange}
-                placeholder="Enter father's name"
+                placeholder="Enter father's name or Husband's name"
               />
               
               <TextInputField
@@ -111,15 +111,15 @@ const Applynow = () => {
                   onChange={handleChange}
                   className='border border-black p-2'>
                   <option value=''>Select course type</option>
-                  <option value='Paid'>Paid Course</option>
-                  <option value='Free'>Free Course</option>
-                  <option value='Both'>Both Courses</option>
+                  <option value='Paid'>Paid Courses</option>
+                  <option value='Free'>Free Courses</option>
+                  <option value='Both'>Free + Paid Courses</option>
                 </select>
               </div>
     
               {/* Qualification Select */}
               <div className='flex flex-col py-2'>
-                <label className='font-roboto'>Qualification</label>
+                <label className='font-roboto'>Latest Qualification</label>
                 <select
                   name='qualification'
                   value={formData.qualification}
@@ -144,6 +144,7 @@ const Applynow = () => {
                   <option value=''>Select your preferred shift</option>
                   <option value='Morning'>Morning</option>
                   <option value='Evening'>Evening</option>
+                  <option value='Any'>Any</option>
                 </select>
               </div>
     
