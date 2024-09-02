@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import { Footer } from '../components/Footer';
+import courses from '../components/coursesData';
 
 function Home() {
   const [currentDiv, setCurrentDiv] = useState(1);
@@ -43,177 +44,38 @@ function Home() {
         </div>
       </div>
       {/* 2ND SECTION */}
-      <div className='flex p-5 flex-col items-center bg-[#fbfafa]'>
-        <h2 className='font-poppins font-bold text-[22px] md:text-[30px]'>
-          Get started right away
-        </h2>
-        <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
-          <div className='w-[100%] md:w-[55%] md:h-[400px]'>
-            <img
-              src={process.env.PUBLIC_URL + '/nixorimg1.jpeg'}
-              className='object-cover w-full h-full rounded-md'
-            />
-          </div>
-          <div className='w-[100%] md:w-[45%] md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
-            <div className='w-[80px] h-[60px]'>
-              <img
-                src={process.env.PUBLIC_URL + '/nixorlogo.jpeg'}
-                className='object-cover w-full h-full rounded-md'
-              />
-            </div>
-            <div className='flex flex-col gap-4'>
-              <h3 className='font-poppins font-bold text-[18px]'>
-                Computer CIT
-              </h3>
-              <p className='font-poppins text-[14.4px]'>
-                Learn the essentials of computer literacy, including basic
-                hardware and software operations. This course covers fundamental
-                skills such as operating systems, word processing, spreadsheets,
-                and internet browsing. Ideal for beginners aiming to become
-                proficient in everyday computer use. Provides foundational
-                knowledge for further technical education. Perfect for students,
-                professionals, and anyone looking to improve computer
-                proficiency.
-              </p>
-            </div>
-            <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
-              <img
-                src={process.env.PUBLIC_URL + '/arrow_r.png'}
-                width={'24px'}
-              />
-            </div>
-          </div>
-        </div>
-        <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
-          <div className='w-[100%] md:w-[45%] md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
-            <div className='w-[80px] h-[60px]'>
-              <img
-                src={process.env.PUBLIC_URL + '/nixorlogo.jpeg'}
-                className='object-cover w-full h-full rounded-md'
-              />
-            </div>
-            <div className='flex flex-col gap-4'>
-              <h3 className='font-poppins font-bold text-[18px]'>
-                Amazon Virtual Assistant
-              </h3>
-              <p className='font-poppins text-[14.4px]'>
-                Become skilled in assisting Amazon sellers with their online
-                businesses. Learn product research, listing optimization, order
-                processing, customer service, and inventory management. The
-                course teaches best practices for managing Amazon Seller Central
-                accounts. Equip yourself with valuable skills to work remotely
-                as a virtual assistant. Suitable for individuals interested in
-                e-commerce and online freelancing.
-              </p>
-            </div>
-            <div className='bg-[#1f89c9] w-[45px] h-[45px] rounded-full flex justify-center items-center cursor-pointer'>
-              <img
-                src={process.env.PUBLIC_URL + '/arrow_r.png'}
-                width={'24px'}
-              />
-            </div>
-          </div>{' '}
-          <div className='w-[100%] md:h-[400px] md:w-[55%]'>
-            <img
-              src={process.env.PUBLIC_URL + '/amazonvabanner.jpg'}
-              className='object-cover w-full h-full  rounded-md'
-            />
-          </div>
+      <div className='flex flex-col md:flex-row justify-center md:gap-5 flex-wrap'>
+          {courses?.slice(0, 5).map((course) => {
+            return (
+              <div className='lg:w-[32%] md:w-[44%]  flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
+                <div className='w-[100%] h-[315px] md:h-[350px] '>
+                  <img
+                    alt=''
+                    src={process.env.PUBLIC_URL + course.image}
+                    className='object-cover w-full h-full rounded-md'
+                  />
+                </div>
+                <div className='w-[100%]  md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
+                  <div className='flex flex-col gap-4'>
+                    <h3 className='font-poppins font-bold text-[18px]'>
+                      {course.title}
+                    </h3>
+                    <p className='font-poppins text-[14.4px]'>
+                      {course.description}
+                    </p>
+                  </div>
+                  <div className='bg-[#1f89c9] w-[35px] h-[35px] rounded-full flex justify-center mt-4 items-center cursor-pointer'>
+                    <img
+                      src={process.env.PUBLIC_URL + '/arrow_r.png'}
+                      width={'24px'}
+                    />
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
-        <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
-          <div className='w-[100%] md:w-[55%] h-[200px]'>
-            <img
-              src={process.env.PUBLIC_URL + '/homesp.png'}
-              className='object-contain w-full h-full rounded-md'
-            />
-          </div>
-          <div className='w-[100%] md:w-[45%] md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
-            <div className='flex flex-col gap-4'>
-              <h3 className='font-poppins font-bold text-[14.4px]'>
-                Office Automation
-              </h3>
-              <p className='font-poppins text-[14.4px]'>
-                Master the automation tools used in modern offices, including
-                document management, email handling, and scheduling systems.
-                Learn how to automate repetitive office tasks to increase
-                efficiency and productivity. The course includes training on
-                office software like Microsoft Office Suite and Google
-                Workspace. Ideal for administrative professionals and office
-                managers. Gain the skills to streamline daily office operations.
-              </p>
-            </div>
-            <div className='bg-[#1f89c9] w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
-              <img
-                src={process.env.PUBLIC_URL + '/arrow_r.png'}
-                width={'24px'}
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className='flex flex-col md:flex-row justify-between'>
-          <div className=' md:w-[49%] flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
-            <div className='w-[100%]  '>
-              <img
-                src={process.env.PUBLIC_URL + '/webdevbanner.png'}
-                className='object-contain w-full h-full rounded-md'
-              />
-            </div>
-            <div className='w-[100%]  md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
-              <div className='flex flex-col gap-4'>
-                <h3 className='font-poppins font-bold text-[14.4px]'>
-                  Advanced Web Development
-                </h3>
-                <p className='font-poppins text-[14.4px]'>
-                  Dive deep into modern web technologies and frameworks like
-                  React, Angular, and Node.js. Build dynamic, responsive, and
-                  scalable websites and web applications. The course covers both
-                  front-end and back-end development techniques. Explore topics
-                  like RESTful APIs, databases, and server management. Ideal for
-                  aspiring web developers looking to enhance their skills.
-                </p>
-              </div>
-              <div className='bg-[#1f89c9] w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
-                <img
-                  src={process.env.PUBLIC_URL + '/arrow_r.png'}
-                  width={'24px'}
-                />
-              </div>
-            </div>
-          </div>
-          <div className=' md:w-[49%]  flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
-            <div className='w-[100%]'>
-              <img
-                src={process.env.PUBLIC_URL + '/homestc.png'}
-                className='object-contain w-full h-full rounded-md'
-              />
-            </div>
-            <div className='w-[100%]  md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
-              <div className='flex flex-col gap-4'>
-                <h3 className='font-poppins font-bold text-[14.4px]'>
-                  Mobile Application Development
-                </h3>
-                <p className='font-poppins text-[14.4px]'>
-                  Learn how to develop applications for mobile devices using
-                  platforms like Android and iOS. This course covers app
-                  architecture, user interface design, and coding in languages
-                  such as Java, Swift, and Kotlin. Understand mobile app
-                  deployment and maintenance. Suitable for anyone aiming to
-                  create user-friendly mobile applications. Gain hands-on
-                  experience by building functional apps.
-                </p>
-              </div>
-              <div className='bg-[#1f89c9] w-[35px] h-[35px] rounded-full flex justify-center items-center cursor-pointer'>
-                <img
-                  src={process.env.PUBLIC_URL + '/arrow_r.png'}
-                  width={'24px'}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* 3RD SECTION */}
       <div className='p-5 bg-[#ffffff] flex flex-col items-center'>

@@ -66,8 +66,8 @@ export default function Header() {
             Courses
           </a>
           <a
-            to='/about'
-            onClick={() => navigate('/about')}
+            to='/counsultancy'
+            onClick={() => navigate('/counsultancy')}
             className='font-poppins text-[16px] cursor-pointer font-medium leading-6 text-gray-900 flex items-center'
           >
             Consultancy
@@ -80,7 +80,7 @@ export default function Header() {
             Gallery
           </a>
           <Popover className='relative flex items-center'>
-            <PopoverButton className='flex items-center gap-x-1 font-poppins text-[14px] font-medium leading-6 text-gray-900'>
+            <PopoverButton className='flex items-center gap-x-1 font-poppins text-[16px] font-medium leading-6 text-gray-900'>
              About
               <ChevronDownIcon
                 aria-hidden='true'
@@ -178,8 +178,8 @@ export default function Header() {
             Courses
           </a>
           <a
-            to='/about'
-            onClick={() => navigate('/about')}
+            to='/counsultancy'
+            onClick={() => navigate('/counsultancy')}
             className='font-poppins text-[16px] py-2 cursor-pointer font-medium leading-6 text-gray-900 flex items-center'
           >
             Consultancy
@@ -191,7 +191,7 @@ export default function Header() {
           >
             Gallery
           </a>
-          <Popover className='relative flex items-center'>
+          {/* <Popover className='relative flex items-center'>
             <PopoverButton className='flex items-center gap-x-1 py-2 font-poppins text-[14px] font-medium leading-6 text-gray-900'>
              About
               <ChevronDownIcon
@@ -230,7 +230,35 @@ export default function Header() {
                 })}
               </div>
             </PopoverPanel>
-          </Popover>
+          </Popover> */}
+           <Disclosure as='div' className='-mx-3'>
+                  <DisclosureButton className='group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-medium font-poppins leading-7 text-gray-900 hover:bg-gray-50'>
+                    About
+                    <ChevronDownIcon
+                      aria-hidden='true'
+                      className='h-5 w-5 flex-none group-data-[open]:rotate-180'
+                    />
+                  </DisclosureButton>
+                  <DisclosurePanel className='mt-2 space-y-2'>
+                    {[...products].map((item) => (
+                      // <DisclosureButton
+                      //   key={item.name}
+                      //   as='a'
+                      //   href={item.href}
+                      //   className='block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                      // >
+                      //   {item.name}
+                      // </DisclosureButton>
+
+                      <NavLink
+                        to={item.href}
+                        className='block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50'
+                      >
+                        {item.name}
+                      </NavLink>
+                    ))}
+                  </DisclosurePanel>
+                </Disclosure>
           <a
             to='/contact'
             onClick={() => navigate('/contact')}
@@ -240,7 +268,7 @@ export default function Header() {
           </a>
           <a
             to='/applynow'
-            onClick={() => navigate('/about')}
+            onClick={() => navigate('/applynow')}
             className='font-poppins text-[16px] py-2 cursor-pointer font-medium leading-6 text-gray-900 flex items-center'
           >
             Apply Now

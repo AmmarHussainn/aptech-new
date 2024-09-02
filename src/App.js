@@ -9,6 +9,7 @@ import About from './pages/About';
 import { Contact } from './pages/Contact';
 import { Courses } from './pages/Courses';
 import Applynow from './pages/Applynow';
+import Counsultancy from './pages/Counsultancy';
 
 
 function App() {
@@ -33,7 +34,12 @@ function App() {
     {
       path: '/applynow',
       element: <Applynow />,
+    },
+    {
+      path: 'counsultancy',
+      element: <Counsultancy />,
     }
+   
   ]);
   return <RouterProvider router={router} />;
 }
