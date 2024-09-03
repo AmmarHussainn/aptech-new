@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 function About() {
   return (
-    <div className='selection:bg-yellow-500 bg-[#f8f9fa]'>
+    <div className=' bg-[#f8f9fa]'>
       <div className='shadow-lg'>
         <Header />
       </div>

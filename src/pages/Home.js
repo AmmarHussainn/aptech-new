@@ -23,7 +23,7 @@ function Home() {
   //   showNextDiv();
   // }, []);
   return (
-    <div className='selection:bg-yellow-500 bg-[#f8f9fa]'>
+    <div className=' bg-[#f8f9fa]'>
       <Header />
 
       {/* HERO SECTION */}

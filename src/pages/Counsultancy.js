@@ -28,7 +28,7 @@ const Counsultancy = () => {
     
   return (
    <>
-   <div className='selection:bg-yellow-500'>
+   <div className=''>
       <div className='shadow-lg'>
         <Header />
       </div>
