@@ -27,7 +27,7 @@ function Home() {
       <Header />
 
       {/* HERO SECTION */}
-      <div className='h-[93vh] bg-[#605f5f] w-full min-h-[680px] relative'>
+      {/* <div className='h-[93vh] bg-[#605f5f] w-full min-h-[680px] relative'>
         <video
           src={process.env.PUBLIC_URL + '/accpaivideo.mp4'}
           controls={false}
@@ -42,7 +42,32 @@ function Home() {
             Transform Your Career with Nixor Tech
           </a>
         </div>
-      </div>
+      </div> */}
+
+<div className='flex justify-center bg-[#f8f9fa] pt-[50px] pb-9 lg:mt-0 mt-9'>
+  <div className='w-[90%]  flex flex-col-reverse md:flex-row gap-5 md:gap-0'>
+    <div className='w-[100%] md:w-[50%] md:py-20 flex flex-col gap-10'>
+      <h1 className='text-[34px] md:text-[44px] font-bold font-poppins'>
+        Unlock Your Future with Industry-Leading Tech Education
+      </h1>
+
+      <p className='font-poppins text-[16px] md:text-[18px]'>
+        Master the skills of tomorrow with expert-led courses in AI, full-stack development, and DevOps. Empower your career with hands-on training and real-world experience.
+      </p>
+      
+      <a href='/applynow' className='font-poppins text-[16px] md:text-[18px] text-[#49bbeb] font-bold'>
+        Enroll Today – Start Your Journey to Success 
+      </a>
+    </div>
+
+    <div className='w-[100%] md:w-[50%] flex justify-center items-center'>
+      <img src={process.env.PUBLIC_URL + '/mainbanner.jpg'} alt='about' />
+    </div>
+  </div>
+</div>
+
+
+
       {/* 2ND SECTION */}
       <div className='flex flex-col md:flex-row justify-center md:gap-5 flex-wrap'>
           {courses?.slice(0, 5).map((course) => {
