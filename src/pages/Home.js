@@ -44,8 +44,8 @@ function Home() {
         </div>
       </div> */}
 
-<div className='flex justify-center bg-[#f8f9fa] pt-[50px] pb-9 lg:mt-0 mt-9'>
-  <div className='w-[90%]  flex flex-col-reverse md:flex-row gap-5 md:gap-0'>
+<div className='flex justify-center bg-[#f8f9fa] pt-[50px] lg:pt-[10px] pb-9 lg:mt-0 mt-9'>
+  <div className='w-[90%]  flex flex-col md:flex-row gap-10 md:gap-5'>
     <div className='w-[100%] md:w-[50%] md:py-20 flex flex-col gap-10'>
       <h1 className='text-[34px] md:text-[44px] font-bold font-poppins'>
         Unlock Your Future with Industry-Leading Tech Education
@@ -55,13 +55,13 @@ function Home() {
         Master the skills of tomorrow with expert-led courses in AI, full-stack development, and DevOps. Empower your career with hands-on training and real-world experience.
       </p>
       
-      <a href='/applynow' className='font-poppins text-[16px] md:text-[18px] text-[#49bbeb] font-bold'>
-        Enroll Today – Start Your Journey to Success 
+      <a href='/applynow' className='font-poppins text-[16px] text-center p-1 rounded-md w-[130px] md:text-[18px] text-white bg-[#49bbeb] font-semibold'>
+        Enroll Today  
       </a>
     </div>
 
     <div className='w-[100%] md:w-[50%] flex justify-center items-center'>
-      <img src={process.env.PUBLIC_URL + '/mainbanner.jpg'} alt='about' />
+      <img src={process.env.PUBLIC_URL + '/mainbanner.jpg'} className=' h-full lg:h-[600px]' alt='about' />
     </div>
   </div>
 </div>

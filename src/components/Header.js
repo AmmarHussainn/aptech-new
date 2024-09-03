@@ -22,8 +22,9 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
   const products = [
-    { name: 'Vision', href: '/about' },
-    { name: 'Mission', href: '/about' },
+    { name: 'About us', href: '/about' },
+    { name: 'Vision', href: '/vision' },
+    { name: 'Mission', href: '/mission' },
   ];
   return (
     <header className='bg-[#f7f7f7]'>

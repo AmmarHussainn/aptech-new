@@ -10,6 +10,8 @@ import { Contact } from './pages/Contact';
 import { Courses } from './pages/Courses';
 import Applynow from './pages/Applynow';
 import Counsultancy from './pages/Counsultancy';
+import Mission from './pages/Mission';
+import Vision from './pages/Vision';
 
 
 function App() {
@@ -38,7 +40,16 @@ function App() {
     {
       path: 'counsultancy',
       element: <Counsultancy />,
+    },
+    {
+      path: 'mission',
+      element: <Mission/>,
+    },
+    {
+      path: 'vision',
+      element: <Vision/>,
     }
+
    
   ]);
   return <RouterProvider router={router} />;
