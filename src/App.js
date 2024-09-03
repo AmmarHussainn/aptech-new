@@ -12,6 +12,7 @@ import Applynow from './pages/Applynow';
 import Counsultancy from './pages/Counsultancy';
 import Mission from './pages/Mission';
 import Vision from './pages/Vision';
+import Gallery from './pages/Gallery';
 
 
 function App() {
@@ -48,6 +49,10 @@ function App() {
     {
       path: 'vision',
       element: <Vision/>,
+    },
+    {
+      path: 'gallery',
+      element: <Gallery/>,
     }
 
    

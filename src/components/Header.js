@@ -74,8 +74,8 @@ export default function Header() {
             Consultancy
           </a>
           <a
-            to='/about'
-            onClick={() => navigate('/about')}
+            to='/gallery'
+            onClick={() => navigate('/gallery')}
             className='font-poppins text-[16px] cursor-pointer font-medium leading-6 text-gray-900 flex items-center'
           >
             Gallery
@@ -186,8 +186,8 @@ export default function Header() {
             Consultancy
           </a>
           <a
-            to='/about'
-            onClick={() => navigate('/about')}
+            to='/gallery'
+            onClick={() => navigate('/gallery')}
             className='font-poppins text-[16px] py-2 cursor-pointer font-medium leading-6 text-gray-900 flex items-center'
           >
             Gallery
