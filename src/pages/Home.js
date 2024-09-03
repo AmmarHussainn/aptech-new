@@ -4,26 +4,26 @@ import { Footer } from '../components/Footer';
 import courses from '../components/coursesData';
 
 function Home() {
-  const [currentDiv, setCurrentDiv] = useState(1);
-  const totalDivs = 2;
+  // const [currentDiv, setCurrentDiv] = useState(1);
+  // const totalDivs = 2;
 
-  const showNextDiv = () => {
-    const current = document.getElementById(`div${currentDiv}`);
-    const nextDiv = currentDiv < totalDivs ? currentDiv + 1 : 1;
-    const next = document.getElementById(`div${nextDiv}`);
-    current.style.transform = 'translateY(-100%)';
-    setTimeout(() => {
-      current.style.transform = 'translateY(100%)';
-    }, 500);
-    next.style.transform = 'translateY(0)';
-    setCurrentDiv(nextDiv);
-  };
+  // const showNextDiv = () => {
+  //   const current = document.getElementById(`div${currentDiv}`);
+  //   const nextDiv = currentDiv < totalDivs ? currentDiv + 1 : 1;
+  //   const next = document.getElementById(`div${nextDiv}`);
+  //   current.style.transform = 'translateY(-100%)';
+  //   setTimeout(() => {
+  //     current.style.transform = 'translateY(100%)';
+  //   }, 500);
+  //   next.style.transform = 'translateY(0)';
+  //   setCurrentDiv(nextDiv);
+  // };
 
-  useEffect(() => {
-    showNextDiv();
-  }, []);
+  // useEffect(() => {
+  //   showNextDiv();
+  // }, []);
   return (
-    <div className='selection:bg-yellow-500'>
+    <div className='selection:bg-yellow-500 bg-[#f8f9fa]'>
       <Header />
 
       {/* HERO SECTION */}
@@ -78,7 +78,7 @@ function Home() {
 
 
       {/* 3RD SECTION */}
-      <div className='p-5 bg-[#ffffff] flex flex-col items-center'>
+      <div className='p-5 bg-[#f8f9fa] flex flex-col items-center'>
         {/* <h2 className='font-poppins font-bold text-[22px] md:text-[30px]'>
           Aptech cover every major cities in world.
         </h2> */}
@@ -119,7 +119,7 @@ function Home() {
           Pakistan
         </h2> */}
 
-        <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white p-4 mt-9 '>
+        <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0  p-4 mt-9 '>
           <div className='w-[100%] md:w-[55%] h-[400px] flex justify-end'>
             <img
               src={process.env.PUBLIC_URL + '/124.png'}
@@ -164,7 +164,7 @@ function Home() {
       {/* 5TH SECTION */}
 
       <div>
-        <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-white p-4 mt-9 '>
+        <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0 bg-[#f8f9fa] p-4 mt-9 '>
           <div className='w-[100%] md:w-[55%] h-[400px] md:p-5  flex flex-col gap-4 md:gap-0 justify-evenly '>
             <div className='flex flex-col gap-4'>
               <p className='font-poppins text-[16px] text-[#1f89c9] font-semibold'>
@@ -212,7 +212,7 @@ function Home() {
       </div>
       {/* 6TH SECTION */}
 
-      <div className='bg-[#fbfafa] p-5 flex flex-col md:flex-row pt-[100px] pb-[100px] gap-9 md:gap-0'>
+      {/* <div className='bg-[#fbfafa] p-5 flex flex-col md:flex-row pt-[100px] pb-[100px] gap-9 md:gap-0'>
         <div className='w-[100%] md:w-[40%] flex flex-col justify-center'>
           <p className='font-poppins text-[16px] text-[#1f89c9] font-semibold'>
             Testimonials
@@ -296,7 +296,7 @@ function Home() {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Footer */}
       <Footer />

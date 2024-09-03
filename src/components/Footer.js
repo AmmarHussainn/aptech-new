@@ -39,13 +39,13 @@ export const Footer = () => {
             />
           </div>
           <div className='flex justify-between md:justify-end items-center gap-5 flex-wrap md:mt-0 mt-5'>
-            <div className='bg-[#1877F2] w-[50px] h-[50px] flex justify-center items-center'>
+            <a href="https://www.facebook.com/profile.php?id=61564752987239" className='bg-[#1877F2] w-[50px] h-[50px] flex justify-center items-center'>
               <img
                 src={process.env.PUBLIC_URL + '/facebook1.png'}
                 alt=''
                 className='w-[32px] h-[32px]'
               />
-            </div>
+            </a>
             <div className='bg-gradient-to-r from-pink-500 via-red-500 via-purple-500 to-yellow-500  w-[50px] h-[50px] flex justify-center items-center'>
               <img
                 src={process.env.PUBLIC_URL + '/instagram1.png'}

@@ -3,14 +3,14 @@ import Header from '../components/Header';
 
 function About() {
   return (
-    <div className='selection:bg-yellow-500'>
+    <div className='selection:bg-yellow-500 bg-[#f8f9fa]'>
       <div className='shadow-lg'>
         <Header />
       </div>
 
       {/* 1ST SECTION */}
 
-      <div className='flex justify-center bg-white pt-[50px] pb-9 mt-9'>
+      <div className='flex justify-center bg-[#f8f9fa] pt-[50px] pb-9 mt-9'>
         <div className='w-[90%] flex flex-col md:flex-row gap-5 md:gap-0 '>
           <div className='w-[100%] md:w-[50%] flex flex-col gap-10'>
             <p className='font-poppins text-[16px] md:text-[18px]'>
@@ -101,7 +101,7 @@ function About() {
       </div> */}
 
       {/* 4TH SECTION */}
-      <div className='w-[100%] bg-[#f8f9fa] flex justify-center'>
+      {/* <div className='w-[100%] bg-[#f8f9fa] flex justify-center'>
         <div className='w-[90%] pt-5 pb-5  flex flex-col items-center'>
           <h2 className='font-poppins font-bold text-[22px] md:text-[30px]'>
             Nixortech cover every major cities in world.
@@ -237,7 +237,7 @@ function About() {
             </div>{' '}
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>
