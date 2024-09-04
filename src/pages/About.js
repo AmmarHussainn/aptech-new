@@ -32,16 +32,16 @@ function About() {
             </p>
           </div>
           <div className='w-[100%] md:w-[50%] flex justify-center items-center'>
-            <img src={process.env.PUBLIC_URL + '/pakistan1.png'} alt='about' />
+            <img src={process.env.PUBLIC_URL + '/pakmap.jpg'} alt='about' />
           </div>
         </div>
       </div>
 
       {/* 2ND SECTION */}
       <div className='flex justify-center bg-[#f8f9fa] pt-[50px] pb-9 mt-9'>
-        <div className='w-[90%] flex flex-col-reverse md:flex-row gap-5 md:gap-0 '>
+        <div className='w-[90%] flex flex-col-reverse md:flex-row gap-5  '>
           <div className='w-[100%] md:w-[50%] flex justify-center items-center'>
-            <img src={process.env.PUBLIC_URL + '/pakistan1.png'} alt='about' />
+            <img src={process.env.PUBLIC_URL + '/pakmap.jpg'} alt='about' />
           </div>
           <div className='w-[100%] md:w-[50%] flex flex-col gap-10'>
             <h1 className='text-[34px] md:text-[44px] font-bold font-poppins'>

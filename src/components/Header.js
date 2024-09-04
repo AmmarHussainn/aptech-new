@@ -33,7 +33,7 @@ export default function Header() {
         className='mx-auto flex max-w-9xl items-center justify-between p-7 lg:px-8'
       >
         <div className='flex lg:flex-1'>
-          <a href='#' className='-m-1.5 p-1.5'>
+          <a href='/' className='-m-1.5 p-1.5'>
             <img
               alt=''
               src={process.env.PUBLIC_URL + '/nixorlogo.jpeg'}

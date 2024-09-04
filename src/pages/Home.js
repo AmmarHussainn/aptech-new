@@ -72,7 +72,7 @@ function Home() {
       <div className='flex flex-col md:flex-row justify-center md:gap-5 flex-wrap'>
           {courses?.slice(0, 5).map((course) => {
             return (
-              <div className='lg:w-[32%] md:w-[44%]  flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
+              <div className='lg:w-[32%] md:w-[44%]  flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg  mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
                 <div className='w-[100%] h-[315px] md:h-[350px] '>
                   <img
                     alt=''
@@ -82,10 +82,10 @@ function Home() {
                 </div>
                 <div className='w-[100%]  md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
                   <div className='flex flex-col gap-4'>
-                    <h3 className='font-poppins font-bold text-[18px]'>
+                    <h3 className='font-poppins font-bold  text-[20px]'>
                       {course.title}
                     </h3>
-                    <p className='font-poppins text-[14.4px]'>
+                    <p className='font-poppins text-justify text-[14.4px]'>
                       {course.description}
                     </p>
                   </div>

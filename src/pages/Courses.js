@@ -9,13 +9,13 @@ export const Courses = () => {
       <Header />
 
       <div className='flex p-5 flex-col items-center bg-[#fbfafa]'>
-        <h2 className='font-poppins font-bold py-44 text-[22px] md:text-[30px]'>
+        <h2 className='font-poppins text-4xl md:text-5xl font-bold py-44 '>
           Courses We Offer
         </h2>
         <div className='flex flex-col md:flex-row justify-center md:gap-5 flex-wrap'>
           {courses?.map((course) => {
             return (
-              <div className='lg:w-[32%] md:w-[44%] cursor-pointer  flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg p-4 mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
+              <div className='lg:w-[32%] md:w-[44%] cursor-pointer  flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg  mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
                 <div className='w-[100%] h-[315px] md:h-[350px] '>
                   <img
                     alt=''

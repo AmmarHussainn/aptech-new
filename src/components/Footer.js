@@ -15,29 +15,7 @@ export const Footer = () => {
           </p>
         </div>
         <div className='w-full md:w-[80%]'>
-          <div className='flex justify-start md:justify-end items-center gap-5 pb-2 flex-wrap'>
-            {/* <img
-              src={process.env.PUBLIC_URL + '/convologo.jpg'}
-              alt=''
-              className='w-[100px]'
-            /> */}
-            
-            <img
-              src={process.env.PUBLIC_URL + '/techwiz.png'}
-              alt=''
-              className='w-[100px] h-[32px]'
-            />
-            {/* <img
-              src={process.env.PUBLIC_URL + '/aptechvision.png'}
-              alt=''
-              className='w-[150px]'
-            /> */}
-            <img
-              src={process.env.PUBLIC_URL + '/apl.png'}
-              alt=''
-              className='w-[50px] h-[50px]'
-            />
-          </div>
+         
           <div className='flex justify-start md:justify-end items-center gap-5 flex-wrap md:mt-0 mt-5'>
             <a href="https://www.facebook.com/profile.php?id=61564752987239" className='bg-[#1877F2] w-[50px] h-[50px] flex justify-center items-center'>
               <img

@@ -41,7 +41,7 @@ const Counsultancy = () => {
       
 
 <div className="px-4 py-8 max-w-7xl mx-auto">
-          <h1 className="text-3xl font-bold mb-8 py-32 text-center">Our Consultancy Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold font-poppins mb-8 py-32 text-center">Our Consultancy Services</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div
