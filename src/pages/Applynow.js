@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { TextInputField } from '../components/InputTextField';
 import Header from '../components/Header';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 
 const Applynow = () => {
   const [formData, setFormData] = useState({
@@ -18,19 +20,19 @@ const Applynow = () => {
     feedback: '',
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+  const handleChange = (name, value) => {
+    console.log(name, value);
+    setFormData({ ...formData, [name]: value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your API call or form submission logic here
     console.log(formData);
   };
+
+  useEffect(() => {
+    console.log(formData);
+  }, [formData]);
 
   return (
     <>
@@ -43,20 +45,19 @@ const Applynow = () => {
               Course Registration
             </h1>
 
-            {/* Name Fields */}
             <TextInputField
               label='Name (Complete Name as per CNIC)'
               name='name'
+              onChange={(e) => handleChange('name', e.target.value)}
               value={formData.name}
-              onChange={handleChange}
               placeholder='Enter your full name'
             />
 
             <TextInputField
               label="Father's Name or Husband's Name"
               name='fatherName'
+              onChange={(e) => handleChange('fatherName', e.target.value)}
               value={formData.fatherName}
-              onChange={handleChange}
               placeholder="Enter father's name or Husband's name"
             />
 
@@ -65,61 +66,63 @@ const Applynow = () => {
               <input
                 type='date'
                 name='dateOfBirth'
+                onChange={(e) => handleChange('dateOfBirth', e.target.value)}
                 value={formData.dateOfBirth}
-                onChange={handleChange}
-                className='border border-black p-2 cursor-pointer '
+                className='border border-black p-2 w-full cursor-pointer '
               />
             </div>
 
-            
-             <div className='flex flex-col py-2'>
+            <div className='flex flex-col py-2'>
               <label className='font-roboto'>Gender</label>
               <select
                 name='gender'
                 value={formData.gender}
-                onChange={handleChange}
+                onChange={(e) => handleChange('gender', e.target.value)}
                 className='border border-black p-2'
               >
                 <option value=''>Select your gender</option>
                 <option value='Male'>Male</option>
                 <option value='Female'>Female</option>
                 <option value='Other'>Other</option>
-              
               </select>
             </div>
-
 
             <TextInputField
               label='Email'
               name='email'
+              onChange={(e) => handleChange('email', e.target.value)}
               value={formData.email}
-              onChange={handleChange}
               placeholder='Enter your email'
             />
-
+            {/* 
             <TextInputField
               label='Contact Number'
               name='contactNumber'
+              onChange={(e) => handleChange('contactNumber', e.target.value)}
               value={formData.contactNumber}
-              onChange={handleChange}
               placeholder='Enter your contact number'
+            /> */}
+            <PhoneInput
+              country={'pk'}
+              onChange={(e) => handleChange('contactNumber', e)}
+              value={formData.contactNumber}
+              inputClass='!w-[100%] !border-none  my-2 p-2 '
+              className='w-[100%]  border border-black'
             />
-
             <TextInputField
               label='Postal Address'
               name='postalAddress'
+              onChange={(e) => handleChange('postalAddress', e.target.value)}
               value={formData.postalAddress}
-              onChange={handleChange}
               placeholder='Enter your postal address'
             />
 
-            {/* Dropdown for Courses */}
             <div className='flex flex-col py-2'>
               <label className='font-roboto'>Select Course</label>
               <select
                 name='course'
+                onChange={(e) => handleChange('course', e.target.value)}
                 value={formData.course}
-                onChange={handleChange}
                 className='border border-black p-2'
               >
                 <option value=''>Select a course</option>
@@ -149,13 +152,12 @@ const Applynow = () => {
               </select>
             </div>
 
-            {/* Course Type Select */}
             <div className='flex flex-col py-2'>
               <label className='font-roboto'>Course Type</label>
               <select
                 name='courseType'
+                onChange={(e) => handleChange('courseType', e.target.value)}
                 value={formData.courseType}
-                onChange={handleChange}
                 className='border border-black p-2'
               >
                 <option value=''>Select course type</option>
@@ -165,13 +167,12 @@ const Applynow = () => {
               </select>
             </div>
 
-            {/* Qualification Select */}
             <div className='flex flex-col py-2'>
               <label className='font-roboto'>Latest Qualification</label>
               <select
                 name='qualification'
+                onChange={(e) => handleChange('qualification', e.target.value)}
                 value={formData.qualification}
-                onChange={handleChange}
                 className='border border-black p-2'
               >
                 <option value=''>Select your qualification</option>
@@ -182,13 +183,12 @@ const Applynow = () => {
               </select>
             </div>
 
-            {/* Shift Select */}
             <div className='flex flex-col py-2'>
               <label className='font-roboto'>Shift</label>
               <select
                 name='shift'
+                onChange={(e) => handleChange('shift', e.target.value)}
                 value={formData.shift}
-                onChange={handleChange}
                 className='border border-black p-2'
               >
                 <option value=''>Select your preferred shift</option>
@@ -198,7 +198,6 @@ const Applynow = () => {
               </select>
             </div>
 
-           
             {/* Feedback TextArea */}
             <div className='flex flex-col py-2'>
               <label className='font-roboto'>
@@ -206,8 +205,8 @@ const Applynow = () => {
               </label>
               <textarea
                 name='feedback'
+                onChange={(e) => handleChange('feedback', e.target.value)}
                 value={formData.feedback}
-                onChange={handleChange}
                 placeholder='Enter your suggestions or feedback'
                 className='border border-black p-2'
                 rows={4}

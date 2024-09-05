@@ -97,8 +97,7 @@ export default function Header() {
                
 
                 {products.map((item) => {
-                  console.log(item); // Log the item to check its structure
-                  return (
+                   return (
                     <div
                       key={item.name}
                       className='group relative flex items-center gap-x-4 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50'
