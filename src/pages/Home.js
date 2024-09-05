@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import { Footer } from '../components/Footer';
 import courses from '../components/coursesData';
@@ -60,7 +59,7 @@ function Home() {
               <div className='lg:w-[32%] md:p-0 p-2 md:w-[44%] cursor-pointer  flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg  mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
                 <div className='w-[100%] h-[315px] md:h-[350px] '>
                   <img
-                    alt=''
+                    alt= {course.title}
                     src={process.env.PUBLIC_URL + course.image}
                     className='object-cover w-full h-full rounded-md'
                   />
@@ -78,6 +77,7 @@ function Home() {
                     <img
                       src={process.env.PUBLIC_URL + '/arrow_r.png'}
                       width={'24px'}
+                      alt='arrow'
                     />
                   </div>
                 </div>
@@ -96,6 +96,7 @@ function Home() {
             <img
               src={process.env.PUBLIC_URL + '/124.png'}
               className='object-contain w-full h-full rounded-md'
+              alt='about'
             />
           </div>
           <div className='w-[100%] md:w-[55%] h-[400px] md:p-5  flex flex-col gap-4 md:gap-0 justify-evenly '>

@@ -71,7 +71,7 @@ const Applynow = () => {
               />
             </div>
 
-             {/* Gender Selection */}
+            
              <div className='flex flex-col py-2'>
               <label className='font-roboto'>Gender</label>
               <select
