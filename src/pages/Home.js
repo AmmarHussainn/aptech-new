@@ -1,8 +1,11 @@
 import Header from '../components/Header';
 import { Footer } from '../components/Footer';
 import courses from '../components/coursesData';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+
+  const navigate = useNavigate();
  
   return (
     <div className=' bg-[#f8f9fa]'>
@@ -37,7 +40,7 @@ function Home() {
         Master the skills of tomorrow with expert-led courses in AI, full-stack development, and DevOps. Empower your career with hands-on training and real-world experience.
       </p>
       
-      <a href='/applynow' className='font-poppins text-[16px] text-center p-1 rounded-md w-[130px] md:text-[18px] text-white bg-[#49bbeb] font-semibold'>
+      <a onClick={()=>{navigate('/applynow')}} className='font-poppins text-[16px] text-center p-1 rounded-md w-[130px] md:text-[18px] text-white bg-[#49bbeb] font-semibold'>
         Enroll Today  
       </a>
     </div>
