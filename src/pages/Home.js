@@ -52,10 +52,12 @@ function Home() {
 
 
       {/* 2ND SECTION */}
-      <div className='flex flex-col md:flex-row justify-center md:gap-5 flex-wrap'>
-          {courses?.slice(0, 5).map((course) => {
+    
+
+<div className='flex flex-col md:flex-row justify-center md:gap-5 flex-wrap'>
+          {courses?.slice(0,5).map((course) => {
             return (
-              <div className='lg:w-[32%] md:w-[44%]  flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg  mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
+              <div className='lg:w-[32%] md:p-0 p-2 md:w-[44%] cursor-pointer  flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg  mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
                 <div className='w-[100%] h-[315px] md:h-[350px] '>
                   <img
                     alt=''
@@ -63,12 +65,12 @@ function Home() {
                     className='object-cover w-full h-full rounded-md'
                   />
                 </div>
-                <div className='w-[100%]  md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
+                <div className='w-[100%]  md:p-5 p-2 flex flex-col gap-4 md:gap-0 justify-between'>
                   <div className='flex flex-col gap-4'>
-                    <h3 className='font-poppins font-bold  text-[20px]'>
+                    <h3 className='font-poppins font-bold text-[18px]'>
                       {course.title}
                     </h3>
-                    <p className='font-poppins text-justify text-[14.4px]'>
+                    <p className='font-poppins text-[14.4px]'>
                       {course.description}
                     </p>
                   </div>
@@ -87,45 +89,7 @@ function Home() {
 
       {/* 3RD SECTION */}
       <div className='p-5 bg-[#f8f9fa] flex flex-col items-center'>
-        {/* <h2 className='font-poppins font-bold text-[22px] md:text-[30px]'>
-          Aptech cover every major cities in world.
-        </h2> */}
-        {/* <div className='w-full flex justify-between flex-col gap-4 md:gap-0 md:flex-row mt-5'>
-          <div className='w-[100%] md:w-[33.3%] flex flex-col items-center'>
-            <h1 className='text-[48px] md:text-[80px] text-[#444444] font-poppins font-bold'>
-              04
-            </h1>
-            <h3 className='text-[18px] md:text-[20px] text-[#000000] font-poppins mt-[-20px] '>
-              Continents
-            </h3>
-          </div>
-          <div className='w-[100%] md:w-[33.3%] flex flex-col items-center border-t-2 border-b-0 border-l-0 border-r-0 md:border-l-2 md:border-t-0 md border-dashed border-black'>
-            <h1 className='text-[48px] md:text-[80px] text-[#444444] font-poppins font-bold'>
-              26
-            </h1>
-            <h3 className='text-[18px] md:text-[20px] text-[#000000] font-poppins mt-[-20px] '>
-              Countries
-            </h3>
-          </div>
-          <div className='w-[100%] md:w-[33.3%] flex flex-col items-center border-t-2 border-b-0 border-l-0 border-r-0 md:border-l-2 md:border-t-0 md border-dashed border-black'>
-            <h1 className='text-[48px] md:text-[80px] text-[#444444] font-poppins font-bold'>
-              1576
-            </h1>
-            <h3 className='text-[18px] md:text-[20px] text-[#000000] font-poppins mt-[-20px] '>
-              Centers
-            </h3>
-          </div>
-        </div> */}
-
-        {/* <h2 className='font-poppins font-bold text-[22px] md:text-[30px] flex mt-9'>
-          <div className='inline text-[#008000]'>36</div>
-          centers across
-          <img
-            src={process.env.PUBLIC_URL + '/pakistan.png'}
-            className='w-[30px] object-contain inline'
-          />
-          Pakistan
-        </h2> */}
+     
 
         <div className='flex flex-col md:flex-row rounded-lg gap-5 md:gap-0  p-4 mt-9 '>
           <div className='w-[100%] md:w-[55%] h-[400px] flex justify-end'>
@@ -157,18 +121,6 @@ function Home() {
 
       {/* 4TH SECTION */}
 
-      {/* <div className='p-5'>
-        <iframe
-          width='100%'
-          height='500'
-          src='https://www.youtube.com/embed/5VgJCjRPMm0?si=cyoTrykvRb9wlgds'
-          title='YouTube video player'
-          frameborder='0'
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-          referrerpolicy='strict-origin-when-cross-origin'
-          allowfullscreen
-        ></iframe>
-      </div> */}
       {/* 5TH SECTION */}
 
       <div>

@@ -71,6 +71,24 @@ const Applynow = () => {
               />
             </div>
 
+             {/* Gender Selection */}
+             <div className='flex flex-col py-2'>
+              <label className='font-roboto'>Gender</label>
+              <select
+                name='gender'
+                value={formData.gender}
+                onChange={handleChange}
+                className='border border-black p-2'
+              >
+                <option value=''>Select your gender</option>
+                <option value='Male'>Male</option>
+                <option value='Female'>Female</option>
+                <option value='Other'>Other</option>
+              
+              </select>
+            </div>
+
+
             <TextInputField
               label='Email'
               name='email'
@@ -180,22 +198,7 @@ const Applynow = () => {
               </select>
             </div>
 
-            {/* Gender Selection */}
-            <div className='flex flex-col py-2'>
-              <label className='font-roboto'>Gender</label>
-              <select
-                name='gender'
-                value={formData.gender}
-                onChange={handleChange}
-                className='border border-black p-2'
-              >
-                <option value=''>Select your gender</option>
-                <option value='Male'>Male</option>
-                <option value='Female'>Female</option>
-              
-              </select>
-            </div>
-
+           
             {/* Feedback TextArea */}
             <div className='flex flex-col py-2'>
               <label className='font-roboto'>

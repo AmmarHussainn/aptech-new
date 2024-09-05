@@ -15,7 +15,7 @@ export const Courses = () => {
         <div className='flex flex-col md:flex-row justify-center md:gap-5 flex-wrap'>
           {courses?.map((course) => {
             return (
-              <div className='lg:w-[32%] md:w-[44%] cursor-pointer  flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg  mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
+              <div className='lg:w-[32%]  md:w-[44%] cursor-pointer  flex flex-col  rounded-lg gap-5 md:gap-0 bg-white shadow-lg  mt-5 transform transition-transform duration-500 hover:-translate-y-2'>
                 <div className='w-[100%] h-[315px] md:h-[350px] '>
                   <img
                     alt=''
@@ -23,7 +23,7 @@ export const Courses = () => {
                     className='object-cover w-full h-full rounded-md'
                   />
                 </div>
-                <div className='w-[100%]  md:p-5  flex flex-col gap-4 md:gap-0 justify-between'>
+                <div className='w-[100%]  md:p-5 p-2 flex flex-col gap-4 md:gap-0 justify-between'>
                   <div className='flex flex-col gap-4'>
                     <h3 className='font-poppins font-bold text-[18px]'>
                       {course.title}
