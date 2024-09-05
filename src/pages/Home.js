@@ -4,24 +4,7 @@ import { Footer } from '../components/Footer';
 import courses from '../components/coursesData';
 
 function Home() {
-  // const [currentDiv, setCurrentDiv] = useState(1);
-  // const totalDivs = 2;
-
-  // const showNextDiv = () => {
-  //   const current = document.getElementById(`div${currentDiv}`);
-  //   const nextDiv = currentDiv < totalDivs ? currentDiv + 1 : 1;
-  //   const next = document.getElementById(`div${nextDiv}`);
-  //   current.style.transform = 'translateY(-100%)';
-  //   setTimeout(() => {
-  //     current.style.transform = 'translateY(100%)';
-  //   }, 500);
-  //   next.style.transform = 'translateY(0)';
-  //   setCurrentDiv(nextDiv);
-  // };
-
-  // useEffect(() => {
-  //   showNextDiv();
-  // }, []);
+ 
   return (
     <div className=' bg-[#f8f9fa]'>
       <Header />
