@@ -6,6 +6,7 @@ import 'react-phone-input-2/lib/style.css';
 import axios from 'axios';
 const Applynow = () => {
   const [loader, setLoader] = useState(false);
+  const [formSuccess, setFormSuccess] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     fatherName: '',
@@ -92,6 +93,7 @@ const Applynow = () => {
           apiBody
         );
         setLoader(false);
+        setFormSuccess(true);
         setFormData({
           name: '',
           fatherName: '',
@@ -106,6 +108,7 @@ const Applynow = () => {
           gender: '',
           feedback: '',
         });
+
         console.log('Form submitted successfully:', response.data);
       } catch (error) {
         console.error('Error submitting the form:', error);
@@ -124,6 +127,7 @@ const Applynow = () => {
           feedback: '',
         });
         setLoader(false);
+        
       }
     } else {
       setLoader(false);
@@ -138,6 +142,14 @@ const Applynow = () => {
     setError({ ...error, [name]: '' });
   };
 
+  useEffect(() => {
+    if (formSuccess) {
+      setTimeout(() => {
+        setFormSuccess(false);
+      }, 10000);
+    }
+  }, [formSuccess]);
+
   return (
     <>
       <Header />
@@ -149,7 +161,7 @@ const Applynow = () => {
               <div class='animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#0077bc]'></div>
             </div>
           )}
-          {!loader && (
+          {!loader && !formSuccess && (
             <form onSubmit={handleSubmit}>
               <h1 className='text-[30px] md:text-[40px] font-bold font-poppins'>
                 Course Registration
@@ -199,7 +211,7 @@ const Applynow = () => {
                   name='gender'
                   value={formData.gender}
                   onChange={(e) => handleChange('gender', e.target.value)}
-                  className={`border ${
+                  className={`border focus:outline-none ${
                     error.gender ? 'border-[#ff0000]' : 'border-black'
                   } p-2`}
                 >
@@ -256,7 +268,7 @@ const Applynow = () => {
                   name='course'
                   onChange={(e) => handleChange('course', e.target.value)}
                   value={formData.course}
-                  className={`border ${
+                  className={`border focus:outline-none ${
                     error.course ? 'border-[#ff0000]' : 'border-black'
                   } p-2`}
                 >
@@ -298,7 +310,7 @@ const Applynow = () => {
                   name='courseType'
                   onChange={(e) => handleChange('courseType', e.target.value)}
                   value={formData.courseType}
-                  className={`border ${
+                  className={`border focus:outline-none ${
                     error.courseType ? 'border-[#ff0000]' : 'border-black'
                   } p-2`}
                 >
@@ -322,7 +334,7 @@ const Applynow = () => {
                     handleChange('qualification', e.target.value)
                   }
                   value={formData.qualification}
-                  className={`border ${
+                  className={`border focus:outline-none ${
                     error.qualification ? 'border-[#ff0000]' : 'border-black'
                   } p-2`}
                 >
@@ -345,7 +357,7 @@ const Applynow = () => {
                   name='shift'
                   onChange={(e) => handleChange('shift', e.target.value)}
                   value={formData.shift}
-                  className={`border ${
+                  className={`border focus:outline-none ${
                     error.shift ? 'border-[#ff0000]' : 'border-black'
                   } p-2`}
                 >
@@ -383,6 +395,36 @@ const Applynow = () => {
                 </button>
               </div>
             </form>
+          )}
+
+          {formSuccess && (
+       
+            <div className='bg-green-100 border border-green-400 text-green-700 px-4 py-9 gap-9 rounded-lg relative flex flex-col justify-center items-center shadow-md'>
+              <span className=''>
+                <strong className='font-bold flex'>
+                <svg
+                    className='w-6 h-6 text-green-500 mr-2'
+                    fill='none'
+                    stroke='currentColor'
+                    viewBox='0 0 24 24'
+                    xmlns='http://www.w3.org/2000/svg'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth='2'
+                      d='M5 13l4 4L19 7'
+                    ></path>
+                  </svg> Form submitted successfully!
+               
+                </strong>
+              </span>
+              <span className='flex justify-center'>
+                <strong className='font-bold text-center'>
+                  An email has been sent to you. Please check your email.
+                </strong>
+              </span>
+            </div>
           )}
         </div>
       </div>
