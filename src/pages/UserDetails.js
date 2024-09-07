@@ -78,6 +78,7 @@ const UserDetails = () => {
         <table className='w-full text-sm text-left '>
           <thead className='text-xs  uppercase bg-gray-50 '>
             <tr>
+              <th className='px-6 py-3'>S.No</th>
               <th className='px-6 py-3'>Name</th>
               <th className='px-6 py-3'>Father/Husband Name</th>
               <th className='px-6 py-3'>Date of Birth</th>
@@ -93,9 +94,10 @@ const UserDetails = () => {
             </tr>
           </thead>
           <tbody>
-            {filteredData?.map((item) => (
+            {filteredData?.map((item , idx) => (
               <tr key={item._id} className='bg-white border-b '>
-                <td className='px-6 py-4 font-medium t whitespace-nowrap'>
+                <td className='px-6 py-4'>{idx+1}</td>
+                <td className='px-6 py-4 font-medium whitespace-nowrap'>
                   {item.name}
                 </td>
                 <td className='px-6 py-4'>{item.fatherOrHusbandName}</td>
