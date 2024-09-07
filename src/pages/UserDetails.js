@@ -6,12 +6,19 @@ const UserDetails = () => {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [searchTag, setSearchTag] = useState('All');
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch('https://nixortech-backend.onrender.com/form/registrations')
       .then((response) => response.json())
-      .then((data) => setData(data))
-      .catch((error) => console.error('Error fetching data:', error));
+      .then((data) => {
+        setData(data);
+        setLoading(false); 
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+        setLoading(false); 
+      });
   }, []);
 
   const filteredData = data.filter((item) => {
@@ -47,7 +54,13 @@ const UserDetails = () => {
   return (
     <div className=' mx-auto p-4'>
       <h1 className='text-2xl font-semibold mb-4'>Registrations</h1>
-      <div className='relative mb-4 flex gap-5'>
+      {loading && (
+        <div className='flex justify-center items-center h-screen'>
+          <div className='animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#0077bc]'></div>
+        </div>
+      )}
+      {!loading && (<>
+        <div className='relative mb-4 flex gap-5'>
         <div>
           <select
             value={searchTag}
@@ -116,6 +129,10 @@ const UserDetails = () => {
           </tbody>
         </table>
       </div>
+      </>)
+      
+      }
+     
     </div>
   );
 };

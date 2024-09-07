@@ -56,7 +56,7 @@ function App() {
       element: <Gallery/>,
     },
     {
-      path : 'userdetails',
+      path : '/userdetails',
       element : <UserDetails/>
     }
 
