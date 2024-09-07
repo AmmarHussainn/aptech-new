@@ -25,7 +25,7 @@ export default function Header() {
     { name: 'About us', href: '/about' },
     { name: 'Vision', href: '/vision' },
     { name: 'Mission', href: '/mission' },
-    { name: 'userdetails', href: '/userdetails' },
+   
   ];
   return (
     <header className='bg-[#f7f7f7]'>
