@@ -87,7 +87,7 @@ const Applynow = () => {
         shift: formData.shift,
         suggestionsFeedback: formData.feedback,
       };
-      console.log('apiBody', apiBody);
+    
       try {
         const response = await axios.post(
           'https://nixortech-backend.onrender.com/form/register',
@@ -111,9 +111,9 @@ const Applynow = () => {
           feedback: '',
         });
 
-        console.log('Form submitted successfully:', response.data);
+        
       } catch (error) {
-        console.error('Error submitting the form:', error);
+       
         setFormData({
           name: '',
           fatherName: '',
@@ -129,6 +129,8 @@ const Applynow = () => {
           feedback: '',
         });
         setLoader(false);
+        swal ( "Oops" ,  "Error submitting the form:" ,  "error" )
+
         
       }
     } else {
@@ -139,7 +141,7 @@ const Applynow = () => {
   };
 
   const handleChange = (name, value) => {
-    console.log(name, value);
+  
     setFormData({ ...formData, [name]: value });
     setError({ ...error, [name]: '' });
   };
