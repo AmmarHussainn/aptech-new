@@ -4,9 +4,10 @@ import Header from '../components/Header';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import axios from 'axios';
+import swal from 'sweetalert'
 const Applynow = () => {
   const [loader, setLoader] = useState(false);
-  const [formSuccess, setFormSuccess] = useState(false);
+  
   const [formData, setFormData] = useState({
     name: '',
     fatherName: '',
@@ -93,7 +94,8 @@ const Applynow = () => {
           apiBody
         );
         setLoader(false);
-        setFormSuccess(true);
+      
+        swal("Form submitted successfully!", " An email has been sent to you. Please check your email.", "success");
         setFormData({
           name: '',
           fatherName: '',
@@ -142,13 +144,7 @@ const Applynow = () => {
     setError({ ...error, [name]: '' });
   };
 
-  useEffect(() => {
-    if (formSuccess) {
-      setTimeout(() => {
-        setFormSuccess(false);
-      }, 10000);
-    }
-  }, [formSuccess]);
+
 
   return (
     <>
@@ -161,7 +157,7 @@ const Applynow = () => {
               <div class='animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#0077bc]'></div>
             </div>
           )}
-          {!loader && !formSuccess && (
+          {!loader && (
             <form onSubmit={handleSubmit}>
               <h1 className='text-[30px] md:text-[40px] font-bold font-poppins'>
                 Course Registration
@@ -397,35 +393,7 @@ const Applynow = () => {
             </form>
           )}
 
-          {formSuccess && (
-       
-            <div className='bg-green-100 border border-green-400 text-green-700 px-4 py-9 gap-9 rounded-lg relative flex flex-col justify-center items-center shadow-md'>
-              <span className=''>
-                <strong className='font-bold flex'>
-                <svg
-                    className='w-6 h-6 text-green-500 mr-2'
-                    fill='none'
-                    stroke='currentColor'
-                    viewBox='0 0 24 24'
-                    xmlns='http://www.w3.org/2000/svg'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth='2'
-                      d='M5 13l4 4L19 7'
-                    ></path>
-                  </svg> Form submitted successfully!
-               
-                </strong>
-              </span>
-              <span className='flex justify-center'>
-                <strong className='font-bold text-center'>
-                  An email has been sent to you. Please check your email.
-                </strong>
-              </span>
-            </div>
-          )}
+        
         </div>
       </div>
     </>

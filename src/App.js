@@ -13,7 +13,6 @@ import Counsultancy from './pages/Counsultancy';
 import Mission from './pages/Mission';
 import Vision from './pages/Vision';
 import Gallery from './pages/Gallery';
-import UserDetails from './pages/UserDetails';
 
 
 function App() {
@@ -55,10 +54,7 @@ function App() {
       path: 'gallery',
       element: <Gallery/>,
     },
-    {
-      path : '/userdetails',
-      element : <UserDetails/>
-    }
+    
 
    
   ]);
