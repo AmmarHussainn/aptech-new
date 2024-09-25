@@ -38,7 +38,7 @@ function About() {
       </div>
 
       {/* 2ND SECTION */}
-      <div className='flex justify-center bg-[#f8f9fa] pt-[50px] pb-9 mt-9'>
+      {/* <div className='flex justify-center bg-[#f8f9fa] pt-[50px] pb-9 mt-9'>
         <div className='w-[90%] flex flex-col-reverse md:flex-row gap-5  '>
           <div className='w-[100%] md:w-[50%] flex justify-center items-center'>
             <img src={process.env.PUBLIC_URL + '/pakmap.jpg'} alt='about' />
@@ -64,180 +64,31 @@ function About() {
             </p>
           </div>
         </div>
+      </div> */}
+
+      <div className='flex justify-center  pt-[50px] pb-9 mt-9 bg-[#1f89c9]'>
+        <div className='w-[90%] flex flex-col md:flex-row gap-5 md:gap-0 '>
+          <div className='w-[100%] md:w-[50%] flex flex-col gap-10  text-white p-2 '>
+            <h2 className='text-3xl font-bold'>Our Vision</h2>
+            <p className='font-poppins text-[16px] md:text-[18px]'>
+              Nixortech Solutions is a dynamic and forward-thinking institution
+              dedicated to empowering individuals through cutting-edge technical
+              education. Our focus is on providing students with the practical
+              skills and knowledge they need to excel in the fast-paced world of
+              technology. With a commitment to innovation and quality education,
+              Nixortech Solutions is paving the way for future tech leaders.
+            </p>
+
+            <h2 className='text-3xl font-bold'>Our Mission</h2>
+            <p className='font-poppins text-[16px] md:text-[18px]'>
+            The mission of Nixortech Solutions is to provide high-quality, practical, and industry-relevant technical education that prepares students for successful careers in the tech industry. We are committed to fostering innovation, critical thinking, and hands-on experience through comprehensive learning programs. By bridging the gap between academic knowledge and real-world applications, we aim to equip our students with the skills and confidence needed to thrive in today's rapidly evolving digital landscape. Our focus is on empowering individuals to lead, create, and succeed in their professional journeys.
+            </p>
+          </div>
+          <div className='w-[100%] md:w-[50%] flex justify-center items-center'>
+            <img src={process.env.PUBLIC_URL + '/vision.jpg'} alt='about' />
+          </div>
+        </div>
       </div>
-
-      {/* 3RD SECTION */}
-
-      {/* <div className='flex justify-center bg-[#ffffff] pt-[50px] pb-9 mt-9'>
-        <div className='w-[90%] flex flex-col md:flex-row gap-4 md:gap-0 items-center '>
-          <div className='w-[100%] md:w-[50%] flex flex-col gap-10'>
-            <h1 className='text-[34px] md:text-[44px] font-bold font-poppins'>
-              Mission
-            </h1>
-
-            <p className='font-poppins text-[16px] md:text-[18px]'>
-              Our mission is to advance the technological landscape of Pakistan
-              by nurturing talent and fostering innovation. We believe that
-              technology, when effectively harnessed, drives growth, enhances
-              productivity, and creates a lasting impact on individuals,
-              organizations, and society at large.
-            </p>
-            <p className='font-poppins text-[16px] md:text-[18px]'>
-              Nixortech Solutions is dedicated to excellence in education,
-              striving to deliver top-quality training that is customer-centric
-              and industry-relevant. Our commitment to excellence ensures that
-              our students are not just skilled professionals but also future
-              leaders in the global technology space.
-            </p>
-          </div>{' '}
-          <div className='w-[100%] h-[500px] md:w-[50%] flex justify-center items-center'>
-            <img
-              alt=''
-              src={process.env.PUBLIC_URL + '/siriqbal.jpg'}
-              className='w-full h-full object-contain'
-            />
-          </div>
-        </div>
-      </div> */}
-
-      {/* 4TH SECTION */}
-      {/* <div className='w-[100%] bg-[#f8f9fa] flex justify-center'>
-        <div className='w-[90%] pt-5 pb-5  flex flex-col items-center'>
-          <h2 className='font-poppins font-bold text-[22px] md:text-[30px]'>
-            Nixortech cover every major cities in world.
-          </h2>
-          <div className='w-full flex justify-between flex-col gap-4 md:gap-0 md:flex-row mt-5'>
-            <div className='w-[100%] md:w-[33.3%] flex flex-col items-center'>
-              <h1 className='text-[48px] md:text-[80px] text-[#444444] font-poppins font-bold'>
-                05
-              </h1>
-              <h3 className='text-[18px] md:text-[20px] text-[#000000] font-poppins mt-[-20px] '>
-                Continents
-              </h3>
-            </div>
-            <div className='w-[100%] md:w-[33.3%] flex flex-col items-center border-t-2 border-b-0 border-l-0 border-r-0 md:border-l-2 md:border-t-0 md border-dashed border-black'>
-              <h1 className='text-[48px] md:text-[80px] text-[#444444] font-poppins font-bold'>
-                40
-              </h1>
-              <h3 className='text-[18px] md:text-[20px] text-[#000000] font-poppins mt-[-20px] '>
-                Countries
-              </h3>
-            </div>
-            <div className='w-[100%] md:w-[33.3%] flex flex-col items-center border-t-2 border-b-0 border-l-0 border-r-0 md:border-l-2 md:border-t-0 md border-dashed border-black'>
-              <h1 className='text-[48px] md:text-[80px] text-[#444444] font-poppins font-bold'>
-                2500
-              </h1>
-              <h3 className='text-[18px] md:text-[20px] text-[#000000] font-poppins mt-[-20px] '>
-                Centers
-              </h3>
-            </div>
-          </div>
-
-          <h2 className='font-poppins font-bold text-[22px] md:text-[30px] flex mt-9'>
-            <div className='inline text-[#008000]'>36</div>
-            centers across
-            <img
-              alt=''
-              src={process.env.PUBLIC_URL + '/pakistan.png'}
-              className='w-[30px] object-contain inline'
-            />
-            Pakistan
-          </h2>
-
-          <div className='w-[100%] md:w-[70%] mt-10 flex flex-col gap-4'>
-            <h1 className='text-[30px] md:text-[44px] font-bold font-poppins'>
-              🏆 Acheivement
-            </h1>
-            <p className='text-[16px] font-poppins'>
-              With a rapidly growing footprint, Nixortech Solutions has emerged
-              as a trusted name in tech education. Our commitment to quality has
-              been recognized by industry experts, and we take pride in our
-              contributions to the tech ecosystem
-            </p>
-          </div>
-
-          <div className='flex flex-col md:flex-row shadow-sm hover:shadow-lg w-[100%] md:w-[70%] gap-5 md:gap-0 bg-white  mt-9 '>
-            <div className='w-[100%] md:w-[50%]  md:p-5 p-4  flex flex-col gap-4 md:gap-0  '>
-              <div className='flex flex-col  gap-4'>
-                <h3 className='font-poppins font-bold text-[18px] md:text-[20px]'>
-                  Empowering your future with technology education.
-                </h3>
-                <p className='font-poppins text-[14.4px]'>
-                  9th April, 2017 was a great day in the history of Aptech
-                  Computer Education Pakistan when its was called to receive the
-                  first International “International Start for Leadership in
-                  Quality”
-                </p>
-              </div>
-            </div>{' '}
-            <div className='w-[100%] md:w-[50%] h-[400px] flex justify-end'>
-              <img
-                alt=''
-                src={process.env.PUBLIC_URL + '/award.jpg'}
-                className='object-contain w-full h-full rounded-md'
-              />
-            </div>
-          </div>
-          <div className='flex flex-col md:flex-row shadow-sm hover:shadow-lg w-[100%] md:w-[70%] gap-5 md:gap-0 bg-white  mt-9 '>
-            <div className='w-[100%] md:w-[50%] h-[400px] flex justify-end'>
-              <img
-                alt=''
-                src={process.env.PUBLIC_URL + '/aboutimg.jpg'}
-                className='object-contain w-full h-full rounded-md'
-              />
-            </div>{' '}
-            <div className='w-[100%] md:w-[50%]  md:p-5 p-4  flex flex-col gap-4 md:gap-0  '>
-              <div className='flex flex-col  gap-4'>
-                <p className='font-poppins text-[14.4px]'>
-                  Pioneer. More than 2 decades of experience in training (since
-                  1986). Trained over 6.4 million students.{' '}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className='flex flex-col md:flex-row shadow-sm hover:shadow-lg w-[100%] md:w-[70%] gap-5 md:gap-0 bg-white  mt-9 mb-9 '>
-            <div className='w-[100%]   md:p-5 p-4  flex flex-col gap-4 md:gap-0  '>
-              <div className='flex flex-col  gap-5'>
-                <h3 className='font-poppins font-bold text-[18px] md:text-[20px]'>
-                  Nixortech Won 🏆 awards
-                </h3>
-                <p className='font-poppins text-[16px]'>
-                  <span className='bg-[#ffbe11] pl-3 pr-3 pt-1 pb-1 text-white'>
-                    (2018)
-                  </span>{' '}
-                  - Brands of the Year
-                </p>
-                <p className='font-poppins text-[16px]'>
-                  <span className='bg-[#ffbe11] pl-3 pr-3 pt-1 pb-1 text-white'>
-                    (2017)
-                  </span>{' '}
-                  - International Star for Leadership in Quality
-                </p>
-                <p className='font-poppins text-[16px]'>
-                  <span className='bg-[#ffbe11] pl-3 pr-3 pt-1 pb-1 text-white'>
-                    (2016)
-                  </span>{' '}
-                  - Who's Who Award
-                </p>
-                <p className='font-poppins text-[16px]'>
-                  <span className='bg-[#ffbe11] pl-3 pr-3 pt-1 pb-1 text-white'>
-                    (2014)
-                  </span>{' '}
-                  - Brand Scientist Award
-                </p>
-                <p className='font-poppins text-[16px]'>
-                  <span className='bg-[#ffbe11] pl-3 pr-3 pt-1 pb-1 text-white'>
-                    (2013)
-                  </span>{' '}
-                  - Best Achievement, at APTECH World Leadership Summit,
-                  Thailand
-                </p>
-              </div>
-            </div>{' '}
-          </div>
-        </div>
-      </div> */}
 
       <Footer />
     </div>
