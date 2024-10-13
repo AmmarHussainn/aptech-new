@@ -272,6 +272,10 @@ const Applynow = () => {
                 >
                   <option value=''>Select a course</option>
                   <option value='Computer CIT'>Computer CIT</option>
+                  <option value='Big Data Analytics Techniques'>Big Data Analytics Techniques</option>
+                  <option value='Advanced Python Programming and Application'>Advanced Python Programming and Application</option>
+                  <option value='Data Mining'>Data Mining</option>
+                  <option value='Digital Marketing'>Digital Marketing</option>
                   <option value='Amazon Virtual Assistant'>
                     Amazon Virtual Assistant
                   </option>
