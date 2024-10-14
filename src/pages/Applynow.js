@@ -276,6 +276,11 @@ const Applynow = () => {
                   <option value='Advanced Python Programming and Application'>Advanced Python Programming and Application</option>
                   <option value='Data Mining'>Data Mining</option>
                   <option value='Digital Marketing'>Digital Marketing</option>
+                  <option value='AI for Banking'>AI For Banking</option>
+                  <option value='Introduction to Financial Markets'>Introduction to Financial Markets</option>
+                  <option value='Cyber Security for Financial Institutions'>Cyber Security For Financial Institutions</option>
+                  <option value='TALLY'>TALLY</option>
+                  <option value='MS PowerBI and Data Analyst Profesional Certificate'>MS PowerBI and Data Analyst Profesional Certificate</option>
                   <option value='Amazon Virtual Assistant'>
                     Amazon Virtual Assistant
                   </option>
