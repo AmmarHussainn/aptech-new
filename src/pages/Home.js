@@ -3,6 +3,7 @@ import { Footer } from '../components/Footer';
 import courses from '../components/coursesData';
 import { useNavigate } from 'react-router-dom';
 import { Carousel } from '../components/carousal';
+import PopupSlider from '../components/popupSlider';
 
 function Home() {
   const navigate = useNavigate();
@@ -350,6 +351,7 @@ function Home() {
 
       {/* Footer */}
       <Footer />
+      <PopupSlider/>
     </div>
   );
 }

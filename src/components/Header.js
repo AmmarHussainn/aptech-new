@@ -145,8 +145,11 @@ export default function Header() {
             Contact Us
           </a>
           <a
-            to='/applynow'
-            onClick={() => navigate('/applynow')}
+            // to='/applynow'
+            // onClick={() => navigate('/applynow')}
+
+             href="https://nsis.navttc.gov.pk/sign-in"
+ 
             className='font-poppins text-[16px] cursor-pointer font-medium leading-6 text-white bg-[#1f89c9] p-2 rounded-md flex items-center'
           >
             Apply Now
@@ -293,8 +296,11 @@ export default function Header() {
                   Contact Us
                 </a>
                 <a
-                  to='/applynow'
-                  onClick={() => navigate('/applynow')}
+                  // to='/applynow'
+                  // onClick={() => navigate('/applynow')}
+
+                   href="https://nsis.navttc.gov.pk/sign-in"
+ 
                   className='font-poppins text-[16px] py-2 cursor-pointer font-medium leading-6 text-gray-900 flex items-center'
                 >
                   Apply Now

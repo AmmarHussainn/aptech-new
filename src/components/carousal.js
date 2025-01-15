@@ -61,12 +61,14 @@ export const Carousel = () => {
                 <p className='font-poppins text-[16px] md:text-[18px]'>
                   {slide.description}
                 </p>
-                <button
-                  onClick={() => navigate('/applynow')}
+                <a
+                  // onClick={() => navigate('/applynow')}
+                href="https://nsis.navttc.gov.pk/sign-in"
+         
                   className='font-poppins text-[16px] text-center p-1 rounded-md w-[130px] md:text-[18px] text-white bg-[#1f89c9] font-semibold'
                 >
                   Enroll Today
-                </button>
+                </a>
               </div>
               <div className='w-[100%] md:w-[50%] flex justify-center items-center'>
                 <img
