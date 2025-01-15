@@ -35,12 +35,13 @@ export default function Header() {
           nixortechsolutions@gmail.com
         </a>
 
-        <div
-          onClick={() => navigate('/applynow')}
+        <a
+          // onClick={() => navigate('/applynow')}
+          href="https://nsis.navttc.gov.pk/sign-in"
           className='text-white border-white border-[2px] py-1 px-1 md:px-3 text-[14px] md:text-[16px] rounded-3xl cursor-pointer'
         >
           Get in Touch
-        </div>
+        </a>
       </div>
       <nav
         aria-label='Global'
